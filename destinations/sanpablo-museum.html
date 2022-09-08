@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style1.scss">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,20 +18,36 @@
         
         <div class="nav">
             <ul>
-                <a href="index.html"><li>Home</li></a>
+                <a href="/index.html"><li>Home</li></a>
                 <a href="/explore.html"><li>Explore</li></a>
-                <a href="contacts.html"><li>Contact Us</li></a>
+                <a href="/contacts.html"><li>Contact Us</li></a>
                 <a href=""><li>About</li></a>
             </ul>
         </div>
     </div>
+
+    <!-- preloader starts here -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <script src="/loader.js"></script>
+
+    <!-- end preloader -->
+
 
     <div class="main-content">
         
     
         <div class="container1">
             <div class="explore-wrapper">
+                
+                
                 <div class="img-wrapper">
+                    <div class="play-button-outer">
+                        <a class="a-play-button" href=""><div class="play-button"></div></a>
+                      </div>
                     <img class="destination-vr" src="/img/museo.jpg" alt="">
                 </div>
     
@@ -37,9 +56,15 @@
                     <h6 class="destination-date">Release Date: August 31, 2022</h6>
                     <h6 class="destination-loc">Location: San Pablo City, Laguna</h6>
                     <div class="buttons-wrapper">
-                        <button class="btn-start">Start Tour</button>
-                        <button class="btn-share">Share</button>
+                        <button class="btn-start"><img class="img-play" src="/ico/play.png" alt=""> Start Tour</button>
+                        <button class="btn-share" onclick="showDiv()"><img class="img-share" src="/ico/share.png" alt=""> Share</button>
                     </div>
+
+                    <script>
+                        function showDiv() {
+                        document.getElementById('share').style.display = "flex";
+                        }
+                    </script>
                     
                 </div>
             </div>
@@ -54,7 +79,19 @@
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342.06659061098514!2d121.32548585697515!3d14.074720055658704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cc8b4d887dd%3A0x5bc335a5ae78dabe!2sDo%C3%B1a%20Leonila%20Park!5e0!3m2!1sen!2sph!4v1662542290586!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
+<!-- share -->
 
+<div id="share" class="share">
+    <div class="close">
+        <i class="fa-duotone fa-xmark"></i>
+    </div>
+    <button class="fb-share btn-share1"><i class="fa-brands fa-facebook-f"></i>Share on Facebook</button>
+    <button class="twt-share btn-share1"><i class="fa-brands fa-twitter"></i>Share on Twitter</button>
+    <button class="redd-share btn-share1"><i class="fa-brands fa-reddit-alien"></i>Share on Reddit</button>
+</div>
+
+
+            <h5 class="lbl-comments">Comments</h5>
         <div id="disqus_thread"></div>
 <script>
     /**
@@ -76,11 +113,20 @@
     </div>
 </div>
 
-<script>
-    $(window).on("load",function(){
- $(".loader-wrapper").fadeOut("slow");
-    });
-</script>
+<div class="footer1">
+    <div class="footer-container">
+    <div class="soc-med-footer">
+        <img class="soc-ico-footer" src="/ico/fb.png" alt="">
+        <img class="soc-ico-footer" src="/ico/ig.png" alt="">
+        <img class="soc-ico-footer" src="/ico/yt.png" alt="">
+        <img class="soc-ico-footer" src="/ico/yt.png" alt="">
+    </div>
+
+    <h6 class="copyright">Copyright © iTOUR SanPablo. All rights reserved.</h6>
+</div>
+</div>
+
+
 
     
 </body>
