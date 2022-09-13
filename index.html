@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/vr-testing/app-files/style.css"> -->
+    <style> @-ms-viewport { width: device-width; } </style>
     <title>iTOUR SanPablo</title>
 </head>
 <body>
@@ -15,13 +17,24 @@
         
         <div class="nav">
             <ul>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Explore</li></a>
-                <a href="contacts.html"><li>Contact Us</li></a>
-                <a href=""><li>About</li></a>
+                <a href="/index.html"><li>Home</li></a>
+                <a href="/explore.html"><li>Explore</li></a>
+                <a href="/contacts.html"><li>Contact Us</li></a>
+                <a href="/about.html"><li>About</li></a>
             </ul>
         </div>
     </div>
+
+    <div id="con"></div>
+
+    <script src="three.min.js"></script>
+    <script src="panolens.min.js"></script>
+
+    <script>
+        const panorama = new PANOLENS.ImagePanorama( 'img/r.jpeg' );
+        const viewer = new PANOLENS.Viewer();
+        viewer.add( panorama );
+    </script>
 
 
     <div class="content">
@@ -32,9 +45,28 @@
             <a href="/explore.html"><button>Get Started</button></a>
         </div>
 
-        <div class="vr">
-            
-        </div>
+
     </div>
+
+    <div id="pano"></div>
+
+    <!-- preloader starts here -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+        <script src="/index.js"></script>
+    <!-- end preloader -->
+
+    
+    
+    
+
+    <script src="/vr-testing/app-files/vendor/screenfull.min.js" ></script>
+<script src="/vr-testing/app-files/vendor/bowser.min.js" ></script>
+<script src="/vr-testing/app-files/vendor/marzipano.js" ></script>
+
+<!-- <script src="/vr-testing/app-files/data.js"></script> -->
+<script src="/vr-testing/app-files/index.js"></script>
 </body>
 </html>
