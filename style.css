@@ -678,6 +678,54 @@ h6 {
   display: unset;
 }
 
+.weather-container {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+  padding: 0.5em 1em 0.5em 2em;
+  display: flex;
+  width: 290px;
+}
+
+.degree, .condition {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.condition {
+  margin-top: 0;
+  font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #3A3A33;
+}
+
+.degree {
+  font-size: 35px;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  color: #3A3A33;
+}
+
+.weather-img {
+  width: 100%;
+}
+
+.weather-icon {
+  display: flex;
+  width: 70px;
+  align-items: center;
+}
+
+.hdn {
+  display: none;
+}
+
 /* END VIRTUAL TOURS */
 .container1 {
   margin: 0 13em;
@@ -832,10 +880,6 @@ h6 {
 }
 .destination-vr {
   width: 100%;
-  transition: 0.2s ease;
-}
-
-.destination-vr:hover {
   opacity: 0.7;
 }
 
@@ -881,7 +925,21 @@ h6 {
     grid-template-columns: auto auto auto;
   }
 }
-@media (max-width: 1508px) {
+@media only screen and (max-width: 1508px) {
+  .container1 {
+    margin: 0 10em;
+    margin-top: 10em;
+  }
+  .weather-container {
+    width: 250px;
+    padding: 0.2em 1em 0.2em 1em;
+  }
+  .degree {
+    font-size: 30px;
+  }
+  .condition {
+    font-size: 12px;
+  }
   .img-wrapper {
     width: 50%;
   }
@@ -891,10 +949,18 @@ h6 {
   .destination-date, .destination-loc {
     font-size: 12px;
   }
+  .buttons-wrapper {
+    gap: 25px;
+  }
   .btn-start, .btn-share {
-    width: 120px;
     height: 40px;
     font-size: 12px;
+  }
+  .btn-start {
+    width: 140px;
+  }
+  .btn-share {
+    width: 120px;
   }
 }
 @media (max-width: 1442px) {
@@ -983,51 +1049,4 @@ h6 {
     display: flex;
     flex-direction: column;
   }
-}
-.weather-container {
-  border: 1px solid black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.5em 0;
-  padding: 0.5em 1em 0.5em 2em;
-  display: flex;
-  width: 290px;
-}
-
-.degree, .condition {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.condition {
-  margin-top: 0;
-  font-size: 14px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: #3A3A33;
-}
-
-.degree {
-  font-size: 35px;
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: 700;
-  color: #3A3A33;
-}
-
-.weather-img {
-  width: 100%;
-}
-
-.weather-icon {
-  display: flex;
-  width: 70px;
-  align-items: center;
-}
-
-.hdn {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
