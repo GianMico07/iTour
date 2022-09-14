@@ -84,7 +84,7 @@ a:active {
 .btn-share1 {
   border-radius: 10px;
   font-size: 14px;
-  width: 200px;
+  width: 220px;
   color: white;
   justify-content: space-evenly;
   font-weight: 400;
@@ -100,7 +100,6 @@ a:active {
 }
 
 .twt-share {
-  width: 190px;
   background-color: #1C93E4;
   transition: 0.2s ease;
 }
@@ -111,7 +110,6 @@ a:active {
 
 .redd-share {
   background-color: #F23C17;
-  width: 180px;
   transition: 0.2s ease;
 }
 
@@ -1016,5 +1014,9 @@ h6 {
   }
   #thread__wrapper {
     border-radius: 0;
+  }
+  .share {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
