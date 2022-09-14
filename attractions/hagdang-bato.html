@@ -55,15 +55,27 @@
                         <a href="/vr-testing/app-files/index.html"><button class="btn-start"><img class="img-play" src="/ico/play.png" alt=""> Start Tour</button></a>
                         <button class="btn-share" onclick="showDiv()"><img class="img-share" src="/ico/share.png" alt=""> Share</button>
                     </div>
-                    <div class="weather">
-                        <div class="weather1">
-                        <h2 class="degree">31°C</h2>
-                        <p class="condition">Partly Cloud</p>
+                    <div class="weather-container">
+                        <div class="temp-wrapper">
+                            <div class="temperature-value">
+                                <p class="degree">- °<span class="degree">C</span></p>
+                            </div>
+
+                            <div class="temperature-description">
+                                <p class="condition"> - </p>
+                            </div>
                         </div>
+
                         <div class="weather-icon">
-                            <img class="weather-img" src="/img/pc.png" alt="">
+                            <img class="weather-img" src="icons/unknown.png" alt="">
                         </div>
                     </div>
+                    
+                    <!--getting the weather for the specific location -->
+                    <label class="hdn" id="lat">39.544743679900876</label>
+                    <label class="hdn" id="long">-100.56765872447819</label>
+                
+                    <script src="/weather.js"></script>
                 </div>
             </div>
             <div class="details-wrapper">
