@@ -6,14 +6,22 @@ body{
     // background-color: #f6f6f6;
 }
 
+input, textarea, button, select, a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+a:focus,
+a:visited,
+a:active{
+    outline: none;
+}
+
 *{
     font-family: 'Poppins', sans-serif;
     /* overflow: hidden; */
-}
-
-button{
     -webkit-tap-highlight-color: transparent;
 }
+
 
 
 .header{
