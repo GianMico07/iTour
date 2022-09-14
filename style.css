@@ -8,6 +8,10 @@ body {
   /* overflow: hidden; */
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .header {
   position: fixed;
   top: 0;
