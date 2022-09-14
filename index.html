@@ -17,26 +17,16 @@
         
         <div class="nav">
             <ul>
-                <a href="/index.html"><li>Home</li></a>
-                <a href="/explore.html"><li>Explore</li></a>
-                <a href="/contacts.html"><li>Contact Us</li></a>
-                <a href="/about.html"><li>About</li></a>
+                <a class="nav-bg active" href="/index.html"><li>Home</li></a>
+                <a class="nav-bg" href="/explore.html"><li>Explore</li></a>
+                <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
+                <a class="nav-bg" href=""><li>About</li></a>
             </ul>
         </div>
     </div>
 
-    <div id="con"></div>
 
-    <script src="three.min.js"></script>
-    <script src="panolens.min.js"></script>
-
-    <script>
-        const panorama = new PANOLENS.ImagePanorama( 'img/r.jpeg' );
-        const viewer = new PANOLENS.Viewer();
-        viewer.add( panorama );
-    </script>
-
-
+    <div class="test">
     <div class="content">
         <div class="welcome">
             <h3>Welcome to</h3>
@@ -45,8 +35,15 @@
             <a href="/explore.html"><button>Get Started</button></a>
         </div>
 
+        <div class="con"></div>
 
+        
+        <script src="/three.min.js"></script>
+        <script src="/panolens.min.js"></script>
+        <script src="/main.js"></script>
     </div>
+</div>
+
 
     <div id="pano"></div>
 
@@ -62,11 +59,5 @@
     
     
 
-    <script src="/vr-testing/app-files/vendor/screenfull.min.js" ></script>
-<script src="/vr-testing/app-files/vendor/bowser.min.js" ></script>
-<script src="/vr-testing/app-files/vendor/marzipano.js" ></script>
-
-<!-- <script src="/vr-testing/app-files/data.js"></script> -->
-<script src="/vr-testing/app-files/index.js"></script>
 </body>
 </html>

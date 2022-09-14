@@ -225,8 +225,8 @@ h1 span{
 
 
 .nav-bg{
-    margin: .5em;
-    padding: .5em;
+    margin: .5em 1.5em;
+    // padding: .5em;
 }
 
 ul{
@@ -242,6 +242,10 @@ ul li{
     display: inline;
 }
 
+.active{
+    border-bottom: 2.5px solid white;
+}
+
 li:hover{
     color:white
 }
@@ -254,18 +258,17 @@ iframe{
 
 
 
-
 .content{
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     width: 100%;
-    height: 800px;
-    justify-content: center;
+    height: 100vh;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .welcome{
-    padding: 2em;
+
 }
 
 h2,h3,p{
@@ -348,20 +351,16 @@ hr{
 }
 
 .msg-cont{
-    // border: 1px solid black;
+    // border: 1px solid #3A3A33;
     background-color: white;
     border-radius: 20px;
     width: 500px;
     padding: 2em;
     display: flex;
     justify-content: center;
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.076),
-    0 100px 80px rgba(0, 0, 0, 0.0);
+    box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
+-webkit-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
+-moz-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
 }
 
 .form{
@@ -396,9 +395,12 @@ textarea{
     font-size: 15px;
 }
 
-#con{
-    width: 100%;
-    height: 100%;
+.con{
+    width: 800px;
+    height: 512px;
+    // border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .submit{
