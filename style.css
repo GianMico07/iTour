@@ -993,6 +993,9 @@ h6 {
   .nav {
     display: none;
   }
+  .logo-name {
+    margin-left: 0;
+  }
   .header {
     padding: 10px 30px;
   }
@@ -1010,7 +1013,7 @@ h6 {
     padding: 0 2em;
   }
   .container1 {
-    margin: 6em 0;
+    margin: 3em 0;
   }
   .img-wrapper {
     width: 100%;
@@ -1066,5 +1069,11 @@ h6 {
   .share {
     display: flex;
     flex-direction: column;
+  }
+  .weather-container {
+    width: 278px;
+  }
+  .iframe {
+    padding: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1194,6 +1194,10 @@ gap: 10px;
         display: none;
     }
 
+    .logo-name{
+        margin-left: 0;
+    }
+
     .header{
         padding: 10px 30px;
     }
@@ -1216,7 +1220,7 @@ gap: 10px;
       }
 
       .container1{
-        margin: 6em 0; 
+        margin: 3em 0; 
       }
 
       .img-wrapper{
@@ -1289,6 +1293,14 @@ gap: 10px;
     .share{
         display: flex;
         flex-direction: column;
+    }
+
+    .weather-container{
+        width: 278px;
+    }
+
+    .iframe{
+        padding: 1em;
     }
 
 }
