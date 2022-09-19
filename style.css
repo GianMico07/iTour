@@ -23,7 +23,7 @@ a:active {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   background-color: #013B82;
   z-index: 3;
@@ -692,7 +692,6 @@ h6 {
 }
 
 .weather-container {
-  border: 1px solid black;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -701,12 +700,17 @@ h6 {
   padding: 0.5em 1em 0.5em 2em;
   display: flex;
   width: 290px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#013b82+0,292d32+100 */
+  background: rgb(1, 59, 130); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(1, 59, 130) 0%, rgb(41, 45, 50) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#013b82", endColorstr="#292d32",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .degree, .condition {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: white;
 }
 
 .condition {
@@ -715,14 +719,12 @@ h6 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #3A3A33;
 }
 
 .degree {
   font-size: 35px;
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 700;
-  color: #3A3A33;
 }
 
 .weather-img {
@@ -1028,19 +1030,10 @@ h6 {
   .destination-date, .destination-loc {
     font-size: 3.5vw;
   }
-  .buttons-wrapper {
-    gap: 25px;
-  }
   .btn-start, .btn-share {
     height: 50px;
     font-size: 14px;
     margin-right: 0;
-  }
-  .btn-start {
-    width: 150px;
-  }
-  .btn-share {
-    width: 140px;
   }
   .details-wrapper {
     padding: 0 2em;
@@ -1071,7 +1064,7 @@ h6 {
     flex-direction: column;
   }
   .weather-container {
-    width: 278px;
+    width: 92%;
   }
   .iframe {
     padding: 1em;
