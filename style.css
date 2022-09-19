@@ -147,6 +147,10 @@ i {
   display: none;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 a, span {
   text-decoration: none;
   color: black;
@@ -221,6 +225,7 @@ li:hover {
 
 iframe {
   margin: 4em auto;
+  margin-bottom: 2em;
   border-radius: 20px;
 }
 
@@ -693,17 +698,20 @@ h6 {
 
 .weather-container {
   border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 1.5em 0;
-  padding: 0.5em 1em 0.5em 2em;
-  display: flex;
-  width: 290px;
+  margin-bottom: 0;
+  width: 83%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#013b82+0,292d32+100 */
   background: rgb(1, 59, 130); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgb(1, 59, 130) 0%, rgb(41, 45, 50) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#013b82", endColorstr="#292d32",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.weather-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em 0.5em 2em;
 }
 
 .degree, .condition {
@@ -844,6 +852,9 @@ h6 {
 } */
 .play-button-outer {
   /* margin: 25% auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 6em;
   height: 6em;
   background-color: rgba(255, 255, 255, 0.25);
@@ -855,9 +866,7 @@ h6 {
 }
 
 .play-button {
-  margin: 0 1.7em;
-  top: 25%;
-  position: relative;
+  margin-left: 8px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -924,74 +933,97 @@ h6 {
   /* display: none; */
 }
 
+h1 {
+  line-height: 50px;
+}
+
 .avatar .user, .avatar img {
   border-radius: 100px;
 }
 
-@media only screen and (max-width: 1580px) {
-  .col-6 {
-    margin-top: 100px;
-  }
-  h6 {
-    width: 220px;
-  }
+@media (max-width: 1366px) {
   .explore-cont {
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: auto auto auto;
   }
-}
-@media only screen and (max-width: 1508px) {
-  .container1 {
-    margin: 0 10em;
-    margin-top: 10em;
-  }
-  .weather-container {
-    width: 250px;
-    padding: 0.2em 1em 0.2em 1em;
-  }
-  .degree {
-    font-size: 30px;
-  }
-  .condition {
-    font-size: 12px;
-  }
-  .img-wrapper {
-    width: 50%;
-  }
-  .destination-name {
-    font-size: 30px;
-  }
-  .destination-date, .destination-loc {
-    font-size: 12px;
-  }
-  .buttons-wrapper {
-    gap: 25px;
-  }
-  .btn-start, .btn-share {
-    height: 40px;
-    font-size: 12px;
-  }
-  .btn-start {
-    width: 140px;
-  }
-  .btn-share {
-    width: 120px;
-  }
-}
-@media (max-width: 1442px) {
   .explore-wrapper {
     gap: 60px;
   }
-  /* .details-wrapper{
-      margin: 0 16rem;
-   } */
-}
-@media only screen and (max-width: 1540px) {
-  .con {
-    width: 700px;
+  .container1 {
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 8em;
+  }
+  .img-wrapper {
+    width: 60%;
+  }
+  .destination-name {
+    font-size: 3vw;
+    margin-bottom: 10px;
+  }
+  .weather-container {
+    width: 86%;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 1112px) {
+  h1 {
+    line-height: 40px;
+  }
+  .img-wrapper {
+    width: 100%;
+  }
+  .destination-name {
+    font-size: 2.5vw;
+  }
+  .container1 {
+    margin: 0 8em;
+    margin-top: 6em;
+  }
+  .explore-wrapper {
+    gap: 40px;
+  }
+  .weather-container {
+    width: 100%;
+  }
+}
+@media (max-width: 834px) {
+  .mobile-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+    margin-left: 0;
+    margin-right: 120px;
+  }
+  .fa-bars {
+    color: white;
+    font-size: 30px;
+  }
+  .explore-wrapper {
+    display: block;
+  }
+  .main-details-wrapper {
+    margin: 2em 0;
+  }
+  .destination-name {
+    font-size: 5.2vw;
+  }
+  .buttons-wrapper {
+    justify-content: space-between;
+  }
+  .btn-start, .btn-share {
+    width: 300px;
+    height: 50px;
+  }
+  .weather-container {
+    width: 100%;
+  }
+  .container1 {
+    margin: 0 5em;
+    margin-top: 3em;
+  }
+}
+@media (max-width: 414px) {
   .nav {
     display: none;
   }
@@ -1001,11 +1033,20 @@ h6 {
   .header {
     padding: 10px 30px;
   }
+  .mobile-nav {
+    margin-right: 0;
+  }
+  .fa-bars {
+    margin-right: 0;
+  }
   .lbl-vtfy {
     font-size: 8vw;
   }
   .lbl-vtfy-desc {
     font-size: 3.5vw;
+  }
+  .main-details-wrapper {
+    margin-top: 1em;
   }
   .explore-cont {
     grid-template-columns: auto;
@@ -1030,10 +1071,14 @@ h6 {
   .destination-date, .destination-loc {
     font-size: 3.5vw;
   }
+  .buttons-wrapper {
+    gap: 20px;
+  }
   .btn-start, .btn-share {
     height: 50px;
     font-size: 14px;
     margin-right: 0;
+    width: 40vw;
   }
   .details-wrapper {
     padding: 0 2em;
@@ -1048,6 +1093,9 @@ h6 {
   .lbl-comments {
     margin: 1em 0;
     padding: 0 1em;
+  }
+  .lbl-details {
+    margin: 0.7em 0;
   }
   .details {
     font-size: 16px;
@@ -1067,6 +1115,9 @@ h6 {
     width: 92%;
   }
   .iframe {
-    padding: 1em;
+    align-items: center;
+  }
+  .weather-container {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
