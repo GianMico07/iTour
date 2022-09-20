@@ -593,18 +593,14 @@ h6 {
   height: 490px;
   border-radius: 20px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transition: 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .explore1:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .explore1:hover .explore-img {
-  -webkit-transform: scale(1.06);
-  -moz-transition: scale(1.06);
-  -o-transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 .view-tour-cont {

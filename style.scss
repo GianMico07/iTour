@@ -678,13 +678,15 @@ h6{
     /* align-items: center; */
 }
 
+
 .explore1{
     background-color: white;
     width: 320px;
     height: 490px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); 
-    -webkit-transition: .4s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
 
 }
 
@@ -692,11 +694,13 @@ h6{
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
+  transform: scale(1.1);
   
     .explore-img{
         -webkit-transform: scale(1.06);
-        -moz-transition: scale(1.06);
+        -moz-transform: scale(1.06);
         -o-transform: scale(1.06);
+        transform: scale(1.06);
 
     }
   
