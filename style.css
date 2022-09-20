@@ -367,7 +367,7 @@ textarea {
 /* transform:scale(1); 
 transform-origin: center center;
 
--webkit-transform:scale(.9); 
+// -webkit-transform:scale(.9); 
 -webkit-transform-origin: center center; */
 .footer {
   display: flex;
@@ -593,14 +593,18 @@ h6 {
   height: 490px;
   border-radius: 20px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
-  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
 }
 
 .explore1:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .explore1:hover .explore-img {
-  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transition: scale(1.06);
+  -o-transform: scale(1.06);
 }
 
 .view-tour-cont {
@@ -680,7 +684,7 @@ h6 {
 .btn-load-more {
   margin: 0;
   font-size: 15px;
-  width: 130px;
+  width: 150px;
   transition: 0.2s ease;
 }
 
@@ -704,7 +708,7 @@ h6 {
   border-radius: 20px;
   margin: 1.5em 0;
   margin-bottom: 0;
-  width: 83%;
+  width: 100%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#013b82+0,292d32+100 */
   background: rgb(1, 59, 130); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgb(1, 59, 130) 0%, rgb(41, 45, 50) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -751,6 +755,10 @@ h6 {
 
 .hdn {
   display: none;
+}
+
+.buttons-and-temp-cont {
+  width: 100%;
 }
 
 /* END VIRTUAL TOURS */
@@ -965,9 +973,6 @@ h1 {
     font-size: 3vw;
     margin-bottom: 10px;
   }
-  .weather-container {
-    width: 86%;
-  }
 }
 @media (max-width: 1112px) {
   h1 {
@@ -985,9 +990,6 @@ h1 {
   }
   .explore-wrapper {
     gap: 40px;
-  }
-  .weather-container {
-    width: 100%;
   }
 }
 @media (max-width: 834px) {
@@ -1019,15 +1021,12 @@ h1 {
     width: 300px;
     height: 50px;
   }
-  .weather-container {
-    width: 100%;
-  }
   .container1 {
     margin: 0 5em;
     margin-top: 3em;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -1102,7 +1101,9 @@ h1 {
     margin-top: 0;
   }
   .lbl-details {
-    margin: 0.7em 0;
+    margin: 0.4em 0;
+    margin-top: 0;
+    font-size: 27px;
   }
   .details {
     font-size: 16px;
@@ -1118,14 +1119,8 @@ h1 {
     display: flex;
     flex-direction: column;
   }
-  .weather-container {
-    width: 92%;
-  }
   .iframe {
     align-items: center;
-  }
-  .weather-container {
-    width: 100%;
   }
   .content {
     display: block;
@@ -1156,7 +1151,7 @@ h1 {
   }
   .m-itour, .sp2 {
     color: white;
-    font-size: 45px;
+    font-size: 11vw;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
