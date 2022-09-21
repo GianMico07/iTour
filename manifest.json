@@ -3,7 +3,7 @@
     "short_name": "iTour SanPablo",
     "start_url": "/?index=true",
     "theme_color": "#013B82",
-    "background_color": "#FFFFFF",
-    "display": "fullscreen",
+    "background_color": "#013B82",
+    "display": "standalone",
     "orientation": "portrait"
 }
