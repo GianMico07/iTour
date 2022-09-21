@@ -1140,6 +1140,14 @@ h1{
     border-radius: 100px;
 }
 
+
+@media (min-width: 1919px){
+    .destination-name{
+        font-size: 45px;
+        line-height: normal;
+    }
+}
+
 @media (max-width: 1440px){
 
     .explore-cont{
@@ -1173,10 +1181,21 @@ h1{
         margin-bottom: 10px;
     }
 
-    // .weather-container{
-    //     width: 100%;
-    // }
+    .panolens-canvas{
+        width: 100%;
+    }
+
+    .con{
+        width: 43vw;
+        height: 30vw;
+    }
+
+    .welcome{
+        transform: scale(.9);
+    }
 }
+
+
 
 @media (max-width: 1112px){
 
@@ -1299,6 +1318,7 @@ h1{
     }
 }
 
+
 @media (max-width: 480px){
     .nav{
         display: none;
@@ -1318,6 +1338,10 @@ h1{
 
     .fa-bars{
         margin-right: 0;
+    }
+
+    .vtfy{
+        margin-top: 5em;
     }
 
     .lbl-vtfy{
@@ -1503,31 +1527,18 @@ h1{
         opacity: 0.5;
     }
 
-    .footer1{
-    }
-
 }
 
-@media (max-width: 1440px){
-    .panolens-canvas{
-        width: 100%;
+@media (max-width: 360px)
+{
+    .explore-cont{
+        margin: 0;
+        transform: scale(0.95);
     }
 
-    .con{
-        width: 43vw;
-        height: 30vw;
-    }
-
-    .welcome{
-        transform: scale(.9);
+    .copyright{
+        font-size: 3.5vw;
     }
 
 
-}
-
-@media (min-width: 1919px){
-    .destination-name{
-        font-size: 45px;
-        line-height: normal;
-    }
 }
