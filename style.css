@@ -128,7 +128,7 @@ i {
 #close i {
   color: white;
   font-size: 40px;
-  margin: 0.25em 0.5em;
+  margin: 0.41em 0.7em;
 }
 
 .btn-close {
@@ -230,6 +230,10 @@ li:hover {
 iframe {
   margin: 4em auto;
   margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+.gm-style {
   border-radius: 20px;
 }
 
@@ -953,13 +957,13 @@ h1 {
     line-height: normal;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1510px) {
   .explore-cont {
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: auto auto auto;
   }
   .explore-wrapper {
-    gap: 60px;
+    gap: 40px;
   }
   .container1 {
     margin-left: 10em;
@@ -970,7 +974,7 @@ h1 {
     width: 60%;
   }
   .destination-name {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-bottom: 10px;
   }
   .panolens-canvas {
@@ -981,6 +985,14 @@ h1 {
     height: 30vw;
   }
   .welcome {
+    transform: scale(0.9);
+  }
+  .buttons-and-temp-cont {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main-details-wrapper {
     transform: scale(0.9);
   }
 }
@@ -1003,6 +1015,12 @@ h1 {
   }
 }
 @media (max-width: 960px) {
+  .header {
+    padding: 10px 30px;
+  }
+  .logo-name {
+    margin-left: 70px;
+  }
   .nav {
     display: none;
   }
@@ -1012,7 +1030,7 @@ h1 {
     align-items: center;
     justify-content: right;
     margin-left: 0;
-    margin-right: 120px;
+    margin-right: 70px;
   }
   .fa-bars {
     color: white;
@@ -1027,8 +1045,15 @@ h1 {
   .destination-name {
     font-size: 5.2vw;
   }
+  .buttons-and-temp-cont {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .buttons-wrapper {
-    justify-content: space-between;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .btn-start, .btn-share {
     width: 240px;
@@ -1038,6 +1063,12 @@ h1 {
     margin: 0 5em;
     margin-top: 3em;
   }
+  .weather-container {
+    width: 100%;
+  }
+  .main-details-wrapper {
+    transform: scale(1);
+  }
 }
 @media (max-width: 834px) {
   .mobile-nav {
@@ -1046,7 +1077,6 @@ h1 {
     align-items: center;
     justify-content: right;
     margin-left: 0;
-    margin-right: 120px;
   }
   .fa-bars {
     color: white;
@@ -1065,12 +1095,18 @@ h1 {
     justify-content: space-between;
   }
   .btn-start, .btn-share {
-    width: 300px;
+    width: 40vw;
     height: 50px;
   }
   .container1 {
     margin: 0 5em;
     margin-top: 3em;
+  }
+  .buttons-and-temp-cont {
+    width: 100%;
+  }
+  .buttons-wrapper {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -1126,6 +1162,7 @@ h1 {
   }
   .buttons-wrapper {
     gap: 20px;
+    width: 100%;
   }
   .btn-start, .btn-share {
     height: 50px;
@@ -1217,6 +1254,9 @@ h1 {
     height: 100vh;
     border-radius: 0;
     opacity: 0.5;
+  }
+  .buttons-and-temp-cont {
+    width: 100%;
   }
 }
 @media (max-width: 360px) {

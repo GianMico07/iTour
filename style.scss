@@ -157,10 +157,11 @@ i{
 }
 
 
+
 #close i{
     color: white;
     font-size: 40px;
-    margin: .25em 0.5em;
+    margin: .41em 0.7em;
 }
 
 .btn-close{
@@ -268,6 +269,10 @@ li:hover{
 iframe{
     margin: 4em auto;
     margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+.gm-style{
     border-radius: 20px;
 }
 
@@ -870,6 +875,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b82', end
 }
 
 .buttons-and-temp-cont{
+    // width: 100%;
     width: fit-content;
 }
 
@@ -994,6 +1000,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b82', end
     display: flex;
     gap: 30px;
     width: fit-content;
+    // width: 100%;
 }
 
 .btn-start,.btn-share{
@@ -1146,9 +1153,21 @@ h1{
         font-size: 45px;
         line-height: normal;
     }
+
+    // .buttons-and-temp-cont{
+    //     width: fit-content;
+    // }
+
+    // .buttons-wrapper{
+    //     width: fit-content;
+    // }
+
+    .weather-container{
+        
+    }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1510px){
 
     .explore-cont{
         /* grid-template-columns: repeat(3, 1fr); */
@@ -1156,7 +1175,7 @@ h1{
        }
 
     .explore-wrapper{
-        gap: 60px;
+        gap: 40px;
     }
 
     .container1{
@@ -1172,12 +1191,9 @@ h1{
 
     // main details of vr
 
-    .main-details-wrapper{
-       
-    }
 
     .destination-name{
-        font-size: 3vw;
+        font-size: 2.5vw;
         margin-bottom: 10px;
     }
 
@@ -1192,6 +1208,14 @@ h1{
 
     .welcome{
         transform: scale(.9);
+    }
+
+    .buttons-and-temp-cont{
+        width: fit-content;
+    }
+
+    .main-details-wrapper{
+        transform: scale(0.9);
     }
 }
 
@@ -1222,9 +1246,18 @@ h1{
     .weather-container{
         // width: 100%;
     }
+
 }
 
 @media (max-width: 960px) {
+
+    .header{
+        padding: 10px 30px;
+    }
+
+    .logo-name{
+        margin-left: 70px;
+    }
 
     .nav{
         display: none;
@@ -1236,7 +1269,7 @@ h1{
         align-items: center;
         justify-content: right;
         margin-left: 0;
-        margin-right: 120px;
+        margin-right: 70px;
     }
     .fa-bars{
         color: white;
@@ -1254,8 +1287,13 @@ h1{
         font-size: 5.2vw;
     }
 
+    .buttons-and-temp-cont{
+        width: fit-content;
+    }
+
     .buttons-wrapper{
-        justify-content: space-between;
+        // justify-content: space-between;
+        width: fit-content;
     }
 
     .btn-start,.btn-share{
@@ -1263,13 +1301,17 @@ h1{
         height: 50px;
     }
 
-    .weather-container{
-        // width: 100%;
-    }
-
     .container1{
         margin: 0 5em;
         margin-top: 3em;
+    }
+
+    .weather-container{
+        width: 100%
+    }
+
+    .main-details-wrapper{
+        transform: scale(1);
     }
       
 }
@@ -1281,7 +1323,7 @@ h1{
         align-items: center;
         justify-content: right;
         margin-left: 0;
-        margin-right: 120px;
+        // margin-right: 120px;
     }
     .fa-bars{
         color: white;
@@ -1304,7 +1346,8 @@ h1{
     }
 
     .btn-start,.btn-share{
-        width: 300px;
+        // width: 300px;
+        width: 40vw;
         height: 50px;
     }
 
@@ -1315,6 +1358,14 @@ h1{
     .container1{
         margin: 0 5em;
         margin-top: 3em;
+    }
+
+    .buttons-and-temp-cont{
+        width: 100%;
+    }
+
+    .buttons-wrapper{
+        width: 100%;
     }
 }
 
@@ -1389,6 +1440,7 @@ h1{
       .buttons-wrapper{
         gap: 20px;
         // justify-content: space-between;
+        width: 100%;
       }
 
       .btn-start,.btn-share{
@@ -1525,6 +1577,10 @@ h1{
         height: 100vh;
         border-radius: 0;
         opacity: 0.5;
+    }
+
+    .buttons-and-temp-cont{
+        width: 100%;
     }
 
 }
