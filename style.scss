@@ -276,18 +276,6 @@ iframe{
     border-radius: 20px;
 }
 
-// .conn{
-//     display: flex;
-//     width: 900px;
-//     border: 1px solid black;
-//     height: 700px;
-//     align-items: center;
-//     justify-content: center;
-//     background-image: url('/backd.png');
-//     background-repeat: no-repeat;
-//     background-size: 800px 800px;
-
-// }
 
 
 
@@ -412,7 +400,7 @@ hr{
 }
 
 .h3-ft{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -454,30 +442,24 @@ hr{
     border-radius: 20px;
     width: 500px;
     padding: 2em;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
 -webkit-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
 -moz-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
 }
 
-.form{
-width: 100%;
-}
-
-label{
-
-}
-
 input, textarea{
     display: block;
-    margin: .5em 0;
-    padding: .5em .3em;
-    width: 490px;
+    margin: 1em 0;
+    padding: 1em;   
+    width: 93%;
     border-style: none;
-    border: 1px solid #D4D3D3;
+    background-color: #F0F2F4;
     border-radius: 5px;
+    transition: all 0.2s ease;
 }
+
 
 textarea{
     resize: none;
@@ -488,10 +470,18 @@ textarea{
 }
 
 .btn-submit{
-    width: 120px;
+    width: 150px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
+    background-color: #FFCB05;
+    transition: all 0.2s ease;
 }
+
+.btn-submit:hover{
+    background-color: #ffda48;
+}
+
+
 
 .con{
     width: 800px;
@@ -685,6 +675,7 @@ h6{
 
 .lbl-vtfy{
     font-size: 50px;
+    margin-bottom: .5em;
 }
 
 .lbl-vtfy-desc{
@@ -746,7 +737,7 @@ h6{
 .explore-cont{
     margin: 0 auto;
     margin-top: 5em;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
     display: grid;
 	grid-gap: 4em;
 	/* row-gap: 4em;
@@ -755,6 +746,68 @@ h6{
     justify-content: center;
     /* align-items: center; */
 }
+
+.feature-cont{
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 8em;
+    display: grid;
+	grid-gap: 4em;
+	/* row-gap: 4em;
+	column-gap: 4em; */
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.feature1{
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); 
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+
+}
+
+.feature-img-cont{
+    display: flex;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 1em;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.feature-img{
+    width: 100%;
+    transition: all .4s ease;
+}
+
+.feature-desc{
+    font-size: 14px;
+    width: fit-content;
+    height: 44px;
+    margin-right: 1em;
+}
+
+.feature1:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    
+      .feature-img{
+          -webkit-transform: scale(1.06);
+          -moz-transform: scale(1.06);
+          -o-transform: scale(1.06);
+          transform: scale(1.06);
+  
+      }
+    
+  }
 
 
 .explore1{
@@ -783,6 +836,7 @@ h6{
     }
   
 }
+
 
 
 
@@ -1245,7 +1299,18 @@ h1{
     }
 }
 
+@media (max-width: 1786px){
+    .con{
+        width: 39vw;
+        height: 26vw;
+    }
+}
+
 @media (max-width: 1510px){
+
+    .feature-cont{
+        transform: scale(0.9);
+    }
 
     .explore-cont{
         /* grid-template-columns: repeat(3, 1fr); */
@@ -1301,6 +1366,20 @@ h1{
 
 @media (max-width: 1112px){
 
+    .feature-cont{
+        transform: scale(0.7);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .welcome{
+        transform: scale(0.7);
+    }
+
+    .content{
+        justify-content: center;
+    }
+
     h1{
         line-height: 40px;
     }
@@ -1328,6 +1407,19 @@ h1{
 }
 
 @media (max-width: 960px) {
+
+
+    .con{
+        display: none;
+    }
+
+
+    .welcome{
+        // text-align: center;
+        transform: scale(1);
+    }
+
+
 
     .header{
         padding: 10px 30px;
@@ -1449,6 +1541,11 @@ h1{
 
 
 @media (max-width: 480px){
+
+    .content{
+        background-image: none;
+    }
+
     .nav{
         display: none;
     }
