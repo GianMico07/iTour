@@ -4,6 +4,9 @@
 body{
     margin: 0;
     // background-color: #f6f6f6;
+    background-image: url(/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 input, textarea, button, select, a{
@@ -150,6 +153,15 @@ a:active{
 
 .redd-share:hover{
     background-color: #ed5234;
+}
+
+.email-share{
+    background-color: #3B3C3D;
+    transition: 0.2s ease;
+}
+
+.email-share:hover{
+    background-color: #58595a;
 }
 
 i{
@@ -458,6 +470,7 @@ input, textarea{
     background-color: #F0F2F4;
     border-radius: 5px;
     transition: all 0.2s ease;
+    font-size: 14px;
 }
 
 
@@ -622,7 +635,7 @@ h5,h6{
 }
 
 h5{
-    font-size: 20px;
+    font-size: 24px;
     margin: 1em 0;
 }
 
