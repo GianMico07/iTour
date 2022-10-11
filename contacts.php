@@ -1,0 +1,187 @@
+<?php
+    use phpmailer\PHPMailer;
+
+    function sendmail(){
+        $name = "iTour SanPablo";
+        $to = "naigmico07@gmail.com";
+        $subject = "Suggestion or Feedback";
+        $body = "hello";
+        $from = "gianmico07@gmail.com";
+        $password = "Kelly@2007";
+
+        require_once "/phpmailer/PHPMailer.php";
+        require_once "/phpmailer/SMTP.php";
+        require_once "/Exception.php";
+        $mail = new PHPMailer();
+
+        $mail->isSMTP();
+        // $mail->SMTPDebug = 3;
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = $from;
+        $mail->Password = $password;
+        $mail->Port = 587;
+        $mail->SMTPSecure = "tls";
+        $mail->smtpConnect([
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            ]
+            ]);
+
+            $mail->isHTML(true);
+            $mail->setFrom($from,$name);
+            $mail->addAddress($to);
+            $mail->Subject = ("$subject");
+            $mail->Body = $body;
+            if ($mail->send()){
+                echo "Email is sent!";
+            } else {
+                echo "Error!" .$mail->ErrorInfo;
+            }
+    }
+    sendmail();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <!-- preloader starts here -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+        <script src="/index.js"></script>
+    <!-- end preloader -->
+
+    <div id="navbar" class="container header">
+        <div class="logo-name">
+            <a href="/index.html"><h1>iTOUR <span class="SP">SanPablo</span></h1></a>
+        </div>
+        
+        <div class="nav">
+            <ul>
+                <a class="nav-bg" href="/index.html"><li>Home</li></a>
+                <a class="nav-bg" href="/explore.html"><li>Explore</li></a>
+                <a class="nav-bg active" href="/contacts.html"><li>Contact Us</li></a>
+                <a class="nav-bg" href=""><li>About</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="vtfy">
+        <h1 class="lbl-vtfy">Contact Us</h1>
+        <h3 class="lbl-vtfy-desc">Feel free to use the contact form to the right to reach out to us!</h3>
+    </div>
+
+
+    <div class="msg-wrapper">
+        <div class="contacts-wrapper">
+        <div class="contact-info">
+            <div class="address">
+                <h5>Our Address</h5>
+                <h6>Tourism Information Center <br>
+                    Dona Leonila Urban Park, City Hall Compound <br>
+                    San Pablo City, Laguna</h6>
+                <hr>
+            </div>
+
+            <div class="email">
+                <h5>Our Email</h5>
+                <h6>sanpablo@gmail.com</h6>
+                <hr>
+            </div>
+
+            <div class="phone">
+                <h5>Our Phone Support</h5>
+                <h6>+63 912 345 67890</h6>
+            </div>
+        </div>
+    </div>
+        <div class="msg-cont">
+                <!-- <div class="form"> -->
+                    <form action="" method="post">
+                        <div class="form">
+                        <label for="">Name</label>
+                        <input  type="text" name="name" id="" placeholder="Your Name" required>
+                        <label for="">Email</label>
+                        <input  type="email" name="email" id="" placeholder="Your Email" required>
+                        <label for="">Phone Number</label>
+                        <input  type="text" name="" id="" placeholder="Your Phone Number" required>
+                        <label for="">Message</label>
+                        <textarea  name="message" id="" cols="10" rows="3" placeholder="Your Message" required></textarea>
+                        
+                        <div class="submit">
+                            <button class="btn-submit">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+        <div class="cu">
+            <h1 class="contact-us">Contact Us</h1>
+        </div>
+        
+        <div class="address">
+            <h5>Our Address</h5>
+            <h6>Tourism Information Center <br>
+                Dona Leonila Urban Park, City Hall Compound <br>
+                San Pablo City, Laguna</h6>
+        </div>
+
+        <div class="contacts">
+            <h5>Our Contacts</h5>
+            <h6>sanpablo@gmail.com <br>
+                +63 912 345 67890</h6>
+        </div>
+
+        <div class="soc-med">
+            <img class="soc-ico" src="ico/fb.png" alt="">
+            <img class="soc-ico" src="ico/ig.png" alt="">
+            <img class="soc-ico" src="ico/yt.png" alt="">
+            <img class="soc-ico" src="ico/yt.png" alt="">
+        </div>
+    </div> -->
+
+    <!-- <div class="col-6">
+        
+    </div> -->
+
+    <div class="footer1">
+        <div class="footer-container">
+            <div class="soc-med-footer">
+                <a href="https://www.facebook.com/tourismsanpablo" target="_blank"><img class="soc-ico-footer" src="/ico/fb.png" alt=""></a>
+                <a href="https://www.instagram.com/tourismofficesanpablo/" target="_blank"><img class="soc-ico-footer" src="/ico/ig.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCV9Q6swgUfJf5Hein8dD5aw/about" target="_blank"><img class="soc-ico-footer" src="/ico/yt.png" alt=""></a>
+                <a href="https://www.tiktok.com/@tourismsanpablo" target="_blank"><img class="soc-ico-footer" src="/ico/tiktok.png" alt=""></a>
+            </div>
+    
+        <h6 class="copyright">Copyright © iTOUR SanPablo. All rights reserved.</h6>
+    </div>
+    </div>
+
+  
+
+
+    
+
+        
+    
+        
+        
+
+
+</body>
+</html>

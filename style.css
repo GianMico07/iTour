@@ -826,11 +826,19 @@ h6 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#013b82", endColorstr="#292d32",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.sff {
+  color: white;
+  font-size: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .weather-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em 0.5em 2em;
+  padding: 0.7em 1em 0.7em 2em;
 }
 
 .degree, .condition {
@@ -842,7 +850,7 @@ h6 {
 
 .condition {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
