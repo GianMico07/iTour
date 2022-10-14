@@ -1292,10 +1292,13 @@ h1 {
 }
 @media (max-width: 640px) and (max-width: 480px) {
   .logo-name {
-    margin-left: 20px;
+    margin-left: 0;
   }
   .mobile-nav {
-    margin-right: 20px;
+    margin-right: 0;
+  }
+  .mobile-nav-menu {
+    padding: 0;
   }
   #menuList {
     padding-right: 3em;
@@ -1314,6 +1317,12 @@ h1 {
   }
   .container1 {
     margin-top: 3em;
+    margin-right: 1em;
+    margin-left: 1em;
+    width: auto;
+  }
+  .img-wrapper {
+    border-radius: 15px;
   }
   .details {
     font-size: 16px;
