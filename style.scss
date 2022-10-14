@@ -1621,6 +1621,10 @@ h1{
             width: auto;
         }
 
+        .main-details-wrapper{
+            margin-top: 1em;
+        }
+
         .img-wrapper{
             border-radius: 15px;
         }
@@ -1631,6 +1635,10 @@ h1{
 
         .buttons-wrapper{
             gap: 25px;
+        }
+
+        .btn-start,.btn-share{
+            height: 55px;
         }
     }
         
