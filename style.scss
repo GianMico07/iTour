@@ -1439,6 +1439,9 @@ h1{
         padding-right: 5em;
         overflow: hidden;
         transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
     }
 }
 
@@ -1595,7 +1598,7 @@ h1{
         }
 
         #menuList{
-            padding-right: 3em;
+            padding-right: 1.7em;
         }
 
         .vtfy{
