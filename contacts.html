@@ -51,6 +51,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -68,14 +72,26 @@
             <a href="/index.html"><h1>iTOUR <span class="SP">SanPablo</span></h1></a>
         </div>
         
+        <div class="mobile-nav">
+            <button class="mobile-nav-menu" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
         <div class="nav">
             <ul>
                 <a class="nav-bg" href="/index.html"><li>Home</li></a>
-                <a class="nav-bg" href="/explore.html"><li>Explore</li></a>
-                <a class="nav-bg active" href="/contacts.html"><li>Contact Us</li></a>
+                <a class="nav-bg active" href="/explore.html"><li>Explore</li></a>
+                <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
                 <a class="nav-bg" href=""><li>About</li></a>
             </ul>
         </div>
+    </div>
+
+    <div class="show-menu">
+        <ul class="mobile-menu" id="menuList">
+            <a class="nav-bg" href="/index.html"><li>Home</li></a>
+            <a class="nav-bg active" href="/explore.html"><li>Explore</li></a>
+            <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
+            <a class="nav-bg" href=""><li>About</li></a>
+        </ul>
     </div>
 
     <div class="vtfy">
@@ -127,6 +143,52 @@
         </div>
     </div>
 
+    <div class="mobile-msg-wrapper">
+        <div class="msg-cont">
+            <!-- <div class="form"> -->
+                <form action="https://formspree.io/f/meqdzlgv" method="post">
+                    <div class="form">
+                    <label for="">Name</label>
+                    <input  type="text" name="name" id="" placeholder="First and Last" required>
+                    <label for="">Email</label>
+                    <input  type="email" name="email" id="" placeholder="email@domain.tld" required>
+                    <label for="">Message</label>
+                    <textarea  name="message" id="message" cols="10" rows="3" placeholder="Your Message" required></textarea>
+                    
+                    <div class="submit">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                    </div>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="mobile-contact-info">
+        <div class="contacts-wrapper">
+            <div class="contact-info">
+                <div class="address">
+                    <h5>Our Address</h5>
+                    <h6>Tourism Information Center <br>
+                        Dona Leonila Urban Park, City Hall Compound <br>
+                        San Pablo City, Laguna</h6>
+                    <hr>
+                </div>
+    
+                <div class="email">
+                    <h5>Our Email</h5>
+                    <h6>sanpablo@gmail.com</h6>
+                    <hr>
+                </div>
+    
+                <div class="phone">
+                    <h5>Our Phone Support</h5>
+                    <h6>+63 912 345 67890</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <div class="footer">
         <div class="cu">
             <h1 class="contact-us">Contact Us</h1>
@@ -171,7 +233,20 @@
     </div>
 
   
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight ="200px";
+            }
 
+            else {
+                menuList.style.maxHeight ="0px";
+            }
+        }
+    </script>
 
     
 

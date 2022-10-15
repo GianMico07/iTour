@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap');
-@include experimental(appearance, none);
 
 body{
     margin: 0;
@@ -1606,19 +1605,29 @@ h1{
 
         .vtfy{
             margin-top: 5em;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .lbl-vtfy{
-            font-size: 38px;
+            // font-size: 38px;
+            margin-bottom: 0;
+            font-size: 8vw;
         }
 
         .lbl-vtfy-desc{
-            font-size: 16px;
+            font-size: 3.5vw;
+            margin: 0 1em;
         }
 
         .explore-cont{
             margin-top: 4em;
         }
+
+        .explore1{
+            transform: scale(1.05);
+        }
+
 
         .container1{
             margin-top: 3em;
@@ -1645,6 +1654,31 @@ h1{
 
         .btn-start,.btn-share{
             height: 55px;
+        }
+
+        .msg-wrapper{
+            display: none;
+        }
+
+        .mobile-msg-wrapper{
+            transform: scale(.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile-contact-info{
+            transform: scale(.9);
+        }
+    }
+
+    @media (max-width: 378px){
+        .explore1{
+            transform: scale(.95);
+        }
+
+        .explore1:hover{
+            transform: scale(1.05);
         }
     }
         
