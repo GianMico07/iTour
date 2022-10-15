@@ -333,6 +333,7 @@ button {
   font-weight: 500;
   margin-top: 1em;
   color: #2e2b2b;
+  -webkit-appearance: button;
 }
 
 .backg {
