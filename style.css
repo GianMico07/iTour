@@ -1283,7 +1283,7 @@ h1 {
   }
   .btn-start, .btn-share {
     width: 240px;
-    height: 50px;
+    padding: 1.8em;
   }
 }
 @media (max-width: 780px) {
