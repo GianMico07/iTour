@@ -45,7 +45,7 @@ a:active{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .95);
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -1300,6 +1300,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b82', end
 
 .details{
     width: fit-content;
+    line-height: 2.5ch;
 }
 
 
@@ -1704,6 +1705,11 @@ h1{
 
         .mobile-contact-info{
             transform: scale(.9);
+        }
+
+        #share{
+            flex-direction: column;
+            gap: 10px;
         }
     }
 
