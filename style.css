@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   margin: 0;
   background-image: url(/back1.jpg);
@@ -971,9 +972,10 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   width: 140px;
-  padding: 1em;
   transition: 0.1s ease-in-out;
 }
 
@@ -1172,6 +1174,10 @@ h1 {
     width: 900px;
   }
 }
+#menuList, .mobile-contact-info, .mobile-msg-wrapper {
+  display: none;
+}
+
 @media (max-width: 1020px) {
   .nav {
     display: none;
@@ -1218,6 +1224,7 @@ h1 {
     margin: 1em 0;
   }
   #menuList {
+    display: unset;
     padding-right: 5em;
     overflow: hidden;
     transition: 0.5s;
@@ -1227,9 +1234,6 @@ h1 {
   }
 }
 @media (max-width: 960px) {
-  .con {
-    display: none;
-  }
   .welcome {
     transform: scale(1);
   }
@@ -1256,6 +1260,20 @@ h1 {
   }
   #menuList {
     padding-right: 7em;
+  }
+  .msg-wrapper {
+    display: none;
+  }
+  .mobile-contact-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .mobile-contact-info, .mobile-msg-wrapper {
+    display: unset;
   }
   .container1 {
     margin-top: 5em;
@@ -1338,6 +1356,51 @@ h1 {
   #menuList {
     padding-right: 1.7em;
   }
+  .content {
+    background-image: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  .con {
+    height: 120%;
+    margin: 0;
+    border-radius: 0;
+    position: fixed;
+    z-index: -2;
+  }
+  .welcome {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    transform: scale(0.9);
+  }
+  .home-desc {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 37px;
+    font-weight: 800;
+  }
+  .btn-gs {
+    margin-left: 0;
+  }
+  .gs {
+    color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  hr {
+    background: white;
+  }
+  .h3-ft {
+    color: white;
+  }
+  .feature-cont {
+    grid-template-columns: auto;
+    margin-bottom: 0;
+  }
   .vtfy {
     margin-top: 5em;
     margin-left: 0;
@@ -1373,7 +1436,7 @@ h1 {
     font-size: 16px;
   }
   .buttons-wrapper {
-    gap: 25px;
+    gap: 20px;
   }
   .msg-wrapper {
     display: none;

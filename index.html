@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="/vr-testing/app-files/style.css"> -->
     <style> @-ms-viewport { width: device-width; } </style>
     <title>iTOUR SanPablo</title>
@@ -19,9 +21,8 @@
         </div>
         
         <div class="mobile-nav">
-            <i class="fa-solid fa-bars"></i>
+            <button class="mobile-nav-menu" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
         </div>
-
         <div class="nav">
             <ul>
                 <a class="nav-bg active" href="/index.html"><li>Home</li></a>
@@ -32,34 +33,39 @@
         </div>
     </div>
 
-    <div class="gg">
-        <div class="try">
-            <h3 class="m-welcome">Welcome to</h3>
-            <h2 class="m-itour">iTOUR <span class="sp2">SanPablo</h2>
-                <p class="m-desc">Explore the tourist spot around San Pablo in a virtual experience.</p>
-                <a href="/explore.html"><button>Get Started</button></a>
-        </div>
-        
+    <div class="show-menu">
+        <ul class="mobile-menu" id="menuList">
+            <a class="nav-bg" href="/index.html"><li>Home</li></a>
+            <a class="nav-bg active" href="/explore.html"><li>Explore</li></a>
+            <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
+            <a class="nav-bg" href=""><li>About</li></a>
+        </ul>
     </div>
 
-    <!-- <img class ="backg" src="/back.png" alt=""> -->
+
+
 
     <div class="content">
         <div class="welcome">
-            <!-- <h3>Welcome to</h3>
-            <h2>iTOUR <span class="sp2">SanPablo</h2> -->
                     <p class ="home-desc">Explore the tourist spots around San Pablo in a Virtual experience.</p>
-                    <a href="/explore.html"><button class="btn-gs">Get Started</button></a> 
+                    <button class="btn-gs"><a class="gs" href="/explore.html">Get Started</a></button> 
         </div>
 
             <div class="con">
             </div>
 
         <!-- <img class="backd" src="/backd.png" alt=""> -->
-        <script src="/three.min.js"></script>
+        
+    </div>
+
+    <!-- <div class="mobile-content">
+        <div class="con">
+        </div>
+    </div> -->
+
+    <script src="/three.min.js"></script>
         <script src="/panolens.min.js"></script>
         <script src="/main.js"></script>
-    </div>
 
     
 
@@ -71,13 +77,6 @@
         <script src="/index.js"></script>
     <!-- end preloader -->
 
-    
-    
-
-    <!-- <div class="featured-container">
-        <div class="featured-tours-wrapper">
-            
-        </div> -->
 
         <div class="line-break">
             <hr>    
@@ -167,6 +166,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div class="footer1">
         <div class="footer-container">
