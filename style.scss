@@ -1329,6 +1329,161 @@ h1{
     border-radius: 100px;
 }
 
+.more-info{
+    width: fit-content;
+    height: auto;
+    margin-top: -5px;
+}
+
+.btn-sff{
+    background-color: transparent;
+    height: auto;
+    width: fit-content;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+#weather-forecast-cont{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+
+}
+
+.dn,h6{
+    color: white;
+}
+
+.wf-cont{
+    display: flex;                      
+    gap: 30px;
+    margin-top: 2em;
+}
+
+.dotd{
+    font-weight: 600;
+}
+
+.day1{
+    background-color: white;
+    width: 400px;
+    height: 482px;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.day2,.day3,.day4,.day5{
+    width: 196px;
+    height: 229px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.day23,.day45{
+    display: flex;
+    gap: 25px;
+}
+
+.day45{
+    margin-top: 1.5em;
+}
+
+.wf-condition-cont{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wf-img-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wf-img{
+    width: 90%;
+}
+
+.wf-degree{
+    color: black;
+    font-size: 70px;
+    line-height: 50px;
+    margin-bottom: 8px;
+}
+
+.wf-condition-wrapper{
+    width: fit-content;
+}
+
+.wf-cond{
+    color: black;
+    font-weight: 600;
+}
+
+.min-max{
+    margin-top: 4.8em;
+    display: flex;
+}
+
+.min,.max{
+    color: black;
+}
+.max{
+    text-align: right;
+}
+
+.day-dotd{
+    font-size: 16px;
+}
+
+.day-wf-condition-cont{
+}
+
+.day-wf-img{
+    width: 40%;
+}
+
+.day-wf-degree{
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 23px;
+    line-height: 30px;
+}
+
+.day-wf-img-wrapper{
+    justify-content: left;
+}
+
+.day-wf-cond{
+    font-size: 14px;
+}
+
+.day-min-max{
+    margin-top: 34px;
+}
+
+.day-min,.day-max{
+    font-size: 12px;
+}
+
+
+
+
+
 @media (max-width: 1740px){
     .welcome,.con{
         transform: scale(0.9);

@@ -22,6 +22,12 @@ function hideDiv(){
     }
 }
 
+
+function ShowWFDiv() {
+    document.getElementById('weather-forecast-cont').style.display = "flex";
+    document.getElementById('close').style.display = "flex";
+    }
+
 var menuList=document.getElementById("menuList");
         menuList.style.maxHeight ="0px";
         function togglemenu(){

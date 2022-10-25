@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
     <title>Museo ng San Pablo - Explore</title>
 </head>
-<body>
+<body onload="DefaultScreen()">
 
     <!-- <script>
         if ('serviceWorker' in navigator){
@@ -52,9 +52,9 @@
     </div>
 
     <!-- preloader starts here -->
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-        </div>
+        <!-- <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+            </div> -->
     <!-- end preloader -->
 
 
@@ -95,7 +95,7 @@
                                 </div>
 
                                 <div class="more-info">
-                                    <a href=""><p class="sff">See full forecast <i class="fa-solid fa-greater-than"></i></p></a>
+                                    <button class="btn-sff" onclick="GetInfo()"><p class="sff">See full forecast <i class="fa-solid fa-greater-than"></i></p></button>
                                 </div>
                             </div>
 
@@ -109,7 +109,7 @@
                         <!--getting the weather for the specific location -->
                         <label class="hdn" id="lat">14.074552832155595</label>
                         <label class="hdn" id="long">121.32456178603906</label>
-                    
+                        
                         <script src="/weather.js"></script>
                 </div>
 
@@ -137,6 +137,130 @@
     <a href="https://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank"><button class="redd-share btn-share1"><i class="fa-brands fa-reddit-alien"></i>Share on Reddit</button></a>
     <a href="mailto:?subject=<SUBJECT>&body=<BODY>"><button class="email-share btn-share1"><i class="fa-solid fa-envelope"></i>Share on Email</button></a>
 </div>
+
+<div id="weather-forecast-cont">
+    <input class="hdn" type="text" id="cityInput" value="Calauan, Laguna">
+
+
+    <div class="weather-forecast-wrapper">
+        <div class="wloc-name-cont">
+            <h1 class="destination-name dn">Museo ng San Pablo</h3>
+                <h6>San Pablo City, Laguna</h6>
+        </div>
+
+        <div class="wf-cont">
+            <div class="day1">
+                <h3 class="dotd" id="day1">Unknown</h3>
+                <div class="wf-condition-cont">
+                    <div class="wf-img-wrapper">
+                        <img class="wf-img" id="img1" src="/icons/black/01.png" alt="">
+                    </div>
+                    
+                    <div class="wf-condition-wrapper">
+                        <p class="degree wf-degree" >- °C</p>
+                        <p class="condition wf-cond" id="desc1">-</p>
+                    </div> 
+                </div>
+                <div class="min-max">
+                    <h6 class="min" id="day1Min">Min: - °C</h6>
+                    <h6 class="max" id="day1Max">Max: - °C</h6>
+                </div>
+            </div>
+
+            <div class="four-days-wf-cont">
+                <div class="day23">
+                    <div class="day2">
+                        <h3 class="dotd day-dotd" id="day2">Unknown</h3>
+                        <div class="wf-condition-wrapper">
+                            <p class="degree wf-degree day-wf-degree">29°C</p>
+                        </div> 
+                        <div class="day-wf-condition-cont">
+                            <div class="wf-img-wrapper day-wf-img-wrapper">
+                                <img class="wf-img day-wf-img" id="img2" src="/icons/black/02.png" alt="">
+                            </div>
+                            <div class="wf-condition-wrapper">
+                                <p class="condition wf-cond day-wf-cond" id="desc2">-</p>
+                            </div> 
+                        </div>
+                        <div class="min-max day-min-max">
+                            <h6 class="min day-min" id="day2Min">Min: 19.2°C</h6>
+                            <h6 class="max day-max" id="day2Max">Max: 30.22°C</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="day3">
+                        <h3 class="dotd day-dotd" id="day3">Unknown</h3>
+                        <div class="wf-condition-wrapper">
+                            <p class="degree wf-degree day-wf-degree">29°C</p>
+                        </div> 
+                        <div class="day-wf-condition-cont">
+                            <div class="wf-img-wrapper day-wf-img-wrapper">
+                                <img class="wf-img day-wf-img" id="img3" src="/icons/black/02.png" alt="">
+                            </div>
+                            <div class="wf-condition-wrapper">
+                                <p class="condition wf-cond day-wf-cond" id="desc3">-</p>
+                            </div> 
+                        </div>
+                        <div class="min-max day-min-max">
+                            <h6 class="min day-min" id="day3Min">Min: 19.2°C</h6>
+                            <h6 class="max day-max" id="day3Max">Max: 30.22°C</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="day45">
+                    <div class="day4">
+                        <h3 class="dotd day-dotd" id="day4">Unknown</h3>
+                        <div class="wf-condition-wrapper">
+                            <p class="degree wf-degree day-wf-degree">29°C</p>
+                        </div> 
+                        <div class="day-wf-condition-cont">
+                            <div class="wf-img-wrapper day-wf-img-wrapper">
+                                <img class="wf-img day-wf-img" id="img4" src="/icons/black/02.png" alt="">
+                            </div>
+                            <div class="wf-condition-wrapper">
+                                <p class="condition wf-cond day-wf-cond" id="desc4">-</p>
+                            </div> 
+                        </div>
+                        <div class="min-max day-min-max">
+                            <h6 class="min day-min" id="day4Min">Min: -°C</h6>
+                            <h6 class="max day-max" id="day4Max">Max: -°C</h6>
+                        </div>
+                    </div>
+                    <div class="day5">
+                        <h3 class="dotd day-dotd" id="day5">Unknown</h3>
+                        <div class="wf-condition-wrapper">
+                            <p class="degree wf-degree day-wf-degree">29°C</p>
+                        </div> 
+                        <div class="day-wf-condition-cont">
+                            <div class="wf-img-wrapper day-wf-img-wrapper">
+                                <img class="wf-img day-wf-img" id="img5" src="/icons/black/02.png" alt="">
+                            </div>
+                            <div class="wf-condition-wrapper">
+                                <p class="condition wf-cond day-wf-cond" id="desc5">-</p>
+                            </div> 
+                        </div>
+                        <div class="min-max day-min-max">
+                            <h6 class="min day-min" id="day5Min">Min: 19.2°C</h6>
+                            <h6 class="max day-max" id="day5Max">Max: 30.22°C</h6>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+       
+
+
+    <script src="/weather1.js"></script>
+</div>
+
+
+
+                        
 
 
         <h5 class="lbl-comments">Comments</h5>

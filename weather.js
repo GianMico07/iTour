@@ -67,6 +67,7 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}°<span class="degree">C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+
 }
 
 // C to F conversion
@@ -89,4 +90,7 @@ tempElement.addEventListener("click", function(){
         weather.temperature.unit = "celsius"
     }
 });
+
+
+
 

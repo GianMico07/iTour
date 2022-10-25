@@ -1,6 +1,6 @@
 const panoImage = document.querySelector('.con');
 
-const panorama = new PANOLENS.ImagePanorama('/r.jpeg');
+const panorama = new PANOLENS.ImagePanorama('/sanpy2.jpg');
 const viewer = new PANOLENS.Viewer({
     container: panoImage,
     autoRotate: true,
@@ -9,3 +9,6 @@ const viewer = new PANOLENS.Viewer({
 });
 
 viewer.add( panorama );
+
+
+
