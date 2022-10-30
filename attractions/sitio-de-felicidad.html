@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
+    <title>Doña Leonila Park - Explore</title>
+</head>
+<body>
+
+    <!-- <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script> -->
+    
+    <div class="header">
+        <div class="logo-name">
+            <a href="/index.html"><h1>iTOUR <span class="SP">SanPablo</span></h1></a>
+        </div>
+        
+        <div class="mobile-nav">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav">
+            <ul>
+                <a class="nav-bg" href="/index.html"><li>Home</li></a>
+                <a class="nav-bg active" href="/explore.html"><li>Explore</li></a>
+                <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
+                <a class="nav-bg" href=""><li>About</li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="close">
+        <button class="btn-close" onclick="hideDiv(); HideWFDiv()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- preloader starts here -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+    <!-- end preloader -->
+
+
+    <div class="main-content">
+        
+    
+        <div class="container1">
+            <div class="explore-wrapper">
+                
+                
+                <div class="img-wrapper">
+                    <div class="play-button-outer">
+                        <a class="a-play-button" href="/attractions/dona-leonila-park/app-files/index.html"><div class="play-button"></div></a>
+                      </div>
+                    <img class="destination-vr" src="/img/sitio.jpg" alt="">
+                </div>
+    
+                <div class="main-details-wrapper">
+                    <h1 class="destination-name">Sitio De Felicidad</h1>
+                    <h6 class="destination-date">Release Date: August 31, 2022</h6>
+                    <h6 class="destination-loc">Location: Dagatan Boulevard</h6>
+
+                    <div class="buttons-and-temp-cont">
+                        <div class="buttons-wrapper">
+                            <a href="/attractions/dona-leonila-park/app-files/index.html"><button class="btn-start"><i class="fa-solid fa-play"></i>Start Tour</button></a>
+                            <button class="btn-share" onclick="showDiv()"><i class="fa-solid fa-share"></i>Share</button>
+                        </div>
+
+                        <div class="weather-container">
+                            <div class="weather-wrapper">
+                            <div class="temp-wrapper">
+                                <div class="temperature-value">
+                                    <p class="degree">- °<span class="degree">C</span></p>
+                                </div>
+
+                                <div class="temperature-description">
+                                    <p class="condition"> - </p>
+                                </div>
+
+                                <div class="more-info">
+                                    <button class="btn-sff" onclick="GetInfo(); ShowWFDiv()"><p class="sff">See full forecast <i class="fa-solid fa-greater-than"></i></p></button>
+                                </div>
+                            </div>
+
+                            <div class="weather-icon">
+                                <img class="weather-img" src="/icons/unknown.png" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        
+                        <!--getting the weather for the specific location -->
+                        <label class="hdn" id="lat">14.074552832155595</label>
+                        <label class="hdn" id="long">121.32456178603906</label>
+                    
+                        <script src="/weather.js"></script>
+                </div>
+            </div>
+
+            <div id="weather-forecast-cont">
+                <!-- <input class="hdn" type="text" id="cityInput" value="London"> -->
+                <input class="hdn" type="text" id="cityLat" value="14.059875">
+                <input class="hdn" type="text" id="cityLong" value="121.327781">
+            
+            
+                <div class="weather-forecast-wrapper">
+                    <div class="wloc-name-cont">
+                        <h1 class="destination-name dn">Dona Leonila Park</h3>
+                            <h6>San Pablo City, Laguna</h6>
+                    </div>
+            
+                    <div class="wf-cont">
+                        <div class="day1">
+                            <h3 class="dotd" id="day1">Unknown</h3>
+                            <div class="wf-condition-cont">
+                                <!-- <div class="wf-img-wrapper"> -->
+                                    <img class="wf-img" id="img1" src="/icons/black/01.png" alt="">
+                                <!-- </div> -->
+                                
+                                <div class="wf-condition-wrapper">
+                                    <p class="degree wf-degree" id="main1">- °C</p>
+                                    <p class="condition wf-cond" id="desc1">-</p>
+                                </div> 
+                            </div>
+                            <div class="min-max">
+                                <h6 class="min" id="day1Min">Min: - °C</h6>
+                                <h6 class="max" id="day1Max">Max: - °C</h6>
+                            </div>
+                        </div>
+            
+                        <div class="four-days-wf-cont">
+                            <div class="day23">
+                                <div class="day2">
+                                    <h3 class="dotd day-dotd" id="day2">Unknown</h3>
+                                    <div class="wf-condition-wrapper">
+                                        <p class="degree wf-degree day-wf-degree" id="main2">-°C</p>
+                                    </div> 
+                                    <div class="day-wf-condition-cont">
+                                        <div class="wf-img-wrapper day-wf-img-wrapper">
+                                            <img class="wf-img day-wf-img" id="img2" src="/icons/black/02.png" alt="">
+                                        </div>
+                                        <div class="wf-condition-wrapper">
+                                            <p class="condition wf-cond day-wf-cond" id="desc2">-</p>
+                                        </div> 
+                                    </div>
+                                    <div class="min-max day-min-max">
+                                        <h6 class="min day-min" id="day2Min">Min: 19.2°C</h6>
+                                        <h6 class="max day-max" id="day2Max">Max: 30.22°C</h6>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="day3">
+                                    <h3 class="dotd day-dotd" id="day3">Unknown</h3>
+                                    <div class="wf-condition-wrapper">
+                                        <p class="degree wf-degree day-wf-degree" id="main3">-°C</p>
+                                    </div> 
+                                    <div class="day-wf-condition-cont">
+                                        <div class="wf-img-wrapper day-wf-img-wrapper">
+                                            <img class="wf-img day-wf-img" id="img3" src="/icons/black/02.png" alt="">
+                                        </div>
+                                        <div class="wf-condition-wrapper">
+                                            <p class="condition wf-cond day-wf-cond" id="desc3">-</p>
+                                        </div> 
+                                    </div>
+                                    <div class="min-max day-min-max">
+                                        <h6 class="min day-min" id="day3Min">Min: 19.2°C</h6>
+                                        <h6 class="max day-max" id="day3Max">Max: 30.22°C</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="day45">
+                                <div class="day4">
+                                    <h3 class="dotd day-dotd" id="day4">Unknown</h3>
+                                    <div class="wf-condition-wrapper">
+                                        <p class="degree wf-degree day-wf-degree" id="main4">-°C</p>
+                                    </div> 
+                                    <div class="day-wf-condition-cont">
+                                        <div class="wf-img-wrapper day-wf-img-wrapper">
+                                            <img class="wf-img day-wf-img" id="img4" src="/icons/black/02.png" alt="">
+                                        </div>
+                                        <div class="wf-condition-wrapper">
+                                            <p class="condition wf-cond day-wf-cond" id="desc4">-</p>
+                                        </div> 
+                                    </div>
+                                    <div class="min-max day-min-max">
+                                        <h6 class="min day-min" id="day4Min">Min: -°C</h6>
+                                        <h6 class="max day-max" id="day4Max">Max: -°C</h6>
+                                    </div>
+                                </div>
+                                <div class="day5">
+                                    <h3 class="dotd day-dotd" id="day5">Unknown</h3>
+                                    <div class="wf-condition-wrapper">
+                                        <p class="degree wf-degree day-wf-degree" id="main5">-°C</p>
+                                    </div> 
+                                    <div class="day-wf-condition-cont">
+                                        <div class="wf-img-wrapper day-wf-img-wrapper">
+                                            <img class="wf-img day-wf-img" id="img5" src="/icons/black/02.png" alt="">
+                                        </div>
+                                        <div class="wf-condition-wrapper">
+                                            <p class="condition wf-cond day-wf-cond" id="desc5">-</p>
+                                        </div> 
+                                    </div>
+                                    <div class="min-max day-min-max">
+                                        <h6 class="min day-min" id="day5Min">Min: 19.2°C</h6>
+                                        <h6 class="max day-max" id="day5Max">Max: 30.22°C</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <script src="/weather1.js"></script>
+            </div>            
+    
+    
+            <div class="details-wrapper">
+                <h5 class="lbl-details">Details</h5>
+                <p class="details">
+                    What is now known as Doña Leonila (Mini-Forest) Park overlooking the Sampaloc Lake is actually a portion of the site for the City Hall Complex purchased in 1937 by the Municipal Government of San Pablo headed by President Inocencio Barleta, which was partly developed after the termination of World War II under the administration of appointed City Mayor, Dr. Fernando A. Bautista.
+                    <br><br>
+                    During the incumbency of elected Mayor Lauro D. Dizon Sr., with the help of the Rotary Club of San Pablo, and under the supervision of Dr. Juan B. Hernandez, then club secretary of the local Rotary Club and Chairman of the City Beautification Committee, constructed some park structures at the park, with the fountain featuring the country lass with agriculture harvest as centerpiece.
+                    <br><br>
+                    Probably, Hernandez and then City Engineer Perfecto Reyes were inspired by the figures affixed on the façade of the City Hall Building which symbolizes progress.
+                    <br><br>
+                    Sometimes on April of 1961 when then President Carlos Garcia made an official visit to San Pablo, when the party dropped-by the park to breath some fresh air, City Mayor Lauro D. Dizon Sr. proclaimed that the garden by the city hall overlooking the lake are being named “Doña Leonila Park” in honor of then First Lady, Mrs. Leonila D. Garcia.
+                    <br><br>   
+                    During the first term in office of Mayor Cesar P. Dizon, the City Beautification Committee headed by Architect Gilda G. Dizon, the City’s First Lady, and City Schools Superintendent Concepcion D. Licsi introduces massive improvement on the park with the construction of promenaders’ lane, which is actually a view deck, put-up park lightings system, and other park fixtures. In 1975 to 1977, San Pableños were not aware that slide photos of the park taken by then Public Information Officer Ruben E. Taningco for the Department of Public Information-Region IV were being flashed on television screen by Manila television stations to accompany good weather reports.
+                    <br><br>
+                    Toilet were added during the incumbency of OIC Mayor Zacarias A. Ticzon, when the park was declared a mini-forest park by then Bureau of Forest Development Director Delfin Ganapin Sr. on June 7, 1987 under the Urban Reforestation Program of President Corazon C. Aquino. Massive landscaping were undertaken in 2003-2004 by the City Tourism and Cultural Office headed by the City’s First Lady, Mrs. Leila A. Aquino. The stage constructed at the park routinary serve as venue for receiving and entertaining official guests of the city during the incumbency of Mayor Florante L. Aquino.
+                </p>
+                <br>
+            </div>
+
+            <div class="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d483.75611062954084!2d121.32444947769824!3d14.074290654165933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5ccf48a5a8b7%3A0x3a3941324192419f!2sMuseo%20ng%20San%20Pablo!5e0!3m2!1sen!2sph!4v1663073472476!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+<!-- share -->
+
+
+
+<div id="share" class="share">
+    <a href="https://www.facebook.com/sharer/sharer.php?u= " target="_blank"><button class="fb-share btn-share1"><i class="fa-brands fa-facebook-f"></i>Share on Facebook</button></a>
+    <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" target="_blank"><button class="twt-share btn-share1"><i class="fa-brands fa-twitter"></i>Share on Twitter</button></a>
+    <a href="https://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank"><button class="redd-share btn-share1"><i class="fa-brands fa-reddit-alien"></i>Share on Reddit</button></a>
+    <a href="mailto:?subject=<SUBJECT>&body=<BODY>"><button class="email-share btn-share1"><i class="fa-solid fa-envelope"></i>Share on Email</button></a>
+</div>
+
+
+        <h5 class="lbl-comments">Comments</h5>
+        <div id="disqus_thread"></div>
+                <script>
+                        var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://itour-san-pablo.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+    </div>
+</div>
+
+
+
+<div class="footer1">
+    <div class="footer-container">
+    <div class="soc-med-footer">
+        <a href="https://www.facebook.com/tourismsanpablo" target="_blank"><img class="soc-ico-footer" src="/ico/fb.png" alt=""></a>
+        <a href="https://www.instagram.com/tourismofficesanpablo/" target="_blank"><img class="soc-ico-footer" src="/ico/ig.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCV9Q6swgUfJf5Hein8dD5aw/about" target="_blank"><img class="soc-ico-footer" src="/ico/yt.png" alt=""></a>
+        <a href="https://www.tiktok.com/@tourismsanpablo" target="_blank"><img class="soc-ico-footer" src="/ico/tiktok.png" alt=""></a>
+    </div>
+
+    <h6 class="copyright">Copyright © iTOUR SanPablo. All rights reserved.</h6>
+</div>
+</div>
+
+<script src="/index.js"></script>
+
+    
+</body>
+</html>

@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-1",
-      "name": "1",
+      "id": "0-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -24,23 +24,23 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.1106454748660397,
-        "pitch": 0.366633330786339,
+        "yaw": 0.1028351509201002,
+        "pitch": 0.19459244143407517,
         "fov": 1.3715802068843215
       },
       "linkHotspots": [
         {
-          "yaw": 0.009711801322165314,
-          "pitch": 0.5208022383939763,
+          "yaw": -0.005740056188374254,
+          "pitch": 0.5135896535172488,
           "rotation": 0,
-          "target": "1-2"
+          "target": "1-hagdang-bato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-2",
-      "name": "2",
+      "id": "1-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -62,29 +62,29 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -3.1151794385193288,
-        "pitch": 0.7136034924670476,
+        "yaw": 3.1243197844754746,
+        "pitch": 0.5754201887454933,
         "fov": 1.3715802068843215
       },
       "linkHotspots": [
         {
-          "yaw": 3.109799317045356,
-          "pitch": 0.7615708958687808,
+          "yaw": 3.078886166918789,
+          "pitch": 0.7678846929759775,
           "rotation": 0,
-          "target": "2-3"
+          "target": "2-hagdang-bato"
         },
         {
-          "yaw": -0.0697891906137329,
-          "pitch": -0.5053679190855913,
+          "yaw": -0.07197422141580745,
+          "pitch": -0.5043816813653219,
           "rotation": 0,
-          "target": "0-1"
+          "target": "0-hagdang-bato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2-3",
-      "name": "3",
+      "id": "2-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -112,29 +112,29 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -1.0025624226156253,
-          "pitch": 0.3993048852062415,
+          "yaw": 1.2242823581564473,
+          "pitch": 0.5045099073809496,
           "rotation": 0,
-          "target": "3-4"
+          "target": "4-hagdang-bato"
         },
         {
-          "yaw": 0.9819254845949281,
-          "pitch": 0.3971763536735011,
+          "yaw": -1.2902097820267855,
+          "pitch": 0.5112666251290179,
           "rotation": 0,
-          "target": "4-5"
+          "target": "3-hagdang-bato"
         },
         {
-          "yaw": 3.0928827714270675,
-          "pitch": -0.10839373229615568,
+          "yaw": 3.088222038747861,
+          "pitch": -0.10445700641917455,
           "rotation": 0,
-          "target": "1-2"
+          "target": "1-hagdang-bato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-4",
-      "name": "4",
+      "id": "3-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -162,29 +162,23 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.16718868268677056,
-          "pitch": 0.29945205515091544,
+          "yaw": 0.18312783046294534,
+          "pitch": 0.29428277660458946,
           "rotation": 0,
-          "target": "5-6"
+          "target": "5-hagdang-bato"
         },
         {
-          "yaw": 1.599170852647804,
-          "pitch": 0.2730039183538615,
+          "yaw": 1.8873150490103292,
+          "pitch": 0.6036109351981587,
           "rotation": 0,
-          "target": "4-5"
-        },
-        {
-          "yaw": 1.9000320297826638,
-          "pitch": 0.6101273125855968,
-          "rotation": 0,
-          "target": "2-3"
+          "target": "2-hagdang-bato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-5",
-      "name": "5",
+      "id": "4-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -212,29 +206,23 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.2678585602388015,
-          "pitch": 0.29109426118974824,
+          "yaw": -0.26213165195181,
+          "pitch": 0.29606499953175813,
           "rotation": 0,
-          "target": "5-6"
+          "target": "5-hagdang-bato"
         },
         {
-          "yaw": -1.6017599915494927,
-          "pitch": 0.2407161646125573,
+          "yaw": -1.7917997044862712,
+          "pitch": 0.5267266608237033,
           "rotation": 0,
-          "target": "3-4"
-        },
-        {
-          "yaw": -1.9435863145820989,
-          "pitch": 0.5413180589648316,
-          "rotation": 0,
-          "target": "2-3"
+          "target": "2-hagdang-bato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-6",
-      "name": "6",
+      "id": "5-hagdang-bato",
+      "name": "Hagdang Bato",
       "levels": [
         {
           "tileSize": 256,
@@ -262,22 +250,22 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 2.761370264794426,
-          "pitch": -0.07940643985725337,
+          "yaw": 2.7635062250246065,
+          "pitch": -0.07471277595265491,
           "rotation": 0,
-          "target": "4-5"
+          "target": "4-hagdang-bato"
         },
         {
-          "yaw": -2.967696913699129,
-          "pitch": -0.06797762320884715,
+          "yaw": -2.974711655553392,
+          "pitch": -0.09043146834746274,
           "rotation": 0,
-          "target": "3-4"
+          "target": "3-hagdang-bato"
         }
       ],
       "infoHotspots": []
     }
   ],
-  "name": "Hagdang Bato",
+  "name": "hagdang-bato",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,

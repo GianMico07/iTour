@@ -4,7 +4,7 @@ function GetInfo() {
     var lat = document.getElementById("cityLat");
     var long = document.getElementById("cityLong");
 
-fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat.value+'&lon='+long.value+'&appid=32ba0bfed592484379e51106cef3f204')
+fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat.value+'&lon='+long.value+'&appid=3e442265f2b66fa1cc2ccfe56a8c30c7')
 .then(response => response.json())
 .then(data => {
 

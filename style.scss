@@ -320,6 +320,10 @@ iframe{
     margin-bottom: 5em;
 }
 
+.gs{
+    color: white;
+}
+
 .btn-gs{
     background-color: transparent;
     border: 2px solid #FFCB05;
@@ -331,6 +335,10 @@ iframe{
 .btn-gs:hover{
     background-color: #FFCB05;
     color: #2e2b2b;
+
+    .gs{
+        color: #2e2b2b;
+    }
 }
 
 .welcome{
@@ -516,7 +524,7 @@ textarea{
     width: 800px;
     height: 512px;
     // border: 1px solid black;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
 -webkit-box-shadow: 10px 10px 23px -7px rgba(0,0,0,0.35);
@@ -1341,6 +1349,10 @@ h1{
     width: fit-content;
     margin-top: 0;
     padding: 0;
+}
+
+.wf-address{
+    width: 500px;
 }
 
 
