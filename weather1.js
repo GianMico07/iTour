@@ -1,8 +1,10 @@
 function GetInfo() {
 
-    var newName = document.getElementById("cityInput");
+    // var newName = document.getElementById("cityInput");
+    var lat = document.getElementById("cityLat");
+    var long = document.getElementById("cityLong");
 
-fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=32ba0bfed592484379e51106cef3f204')
+fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat.value+'&lon='+long.value+'&appid=32ba0bfed592484379e51106cef3f204')
 .then(response => response.json())
 .then(data => {
 
@@ -30,6 +32,9 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appi
     }
     console.log(data)
 
+    for(i =0; i<5; i++){
+        document.getElementById("main" + (i+1)).innerHTML = Math.round(data.list[i].main.temp_max - 273.15) + "°C";
+    }
 
 })
 

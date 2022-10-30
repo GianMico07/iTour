@@ -26,7 +26,16 @@ function hideDiv(){
 function ShowWFDiv() {
     document.getElementById('weather-forecast-cont').style.display = "flex";
     document.getElementById('close').style.display = "flex";
+    
     }
+
+function HideWFDiv(){
+    if (document.getElementById('weather-forecast-cont').style.display !== "none"){
+        document.getElementById('weather-forecast-cont').style.display = "none";
+        document.getElementById('close').style.display = "none";
+        
+    }
+}
 
 var menuList=document.getElementById("menuList");
         menuList.style.maxHeight ="0px";
