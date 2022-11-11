@@ -265,6 +265,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-left: 0;
   -webkit-transition: margin-left 0.5s ease-in-out;
   transition: margin-left 0.5s ease-in-out;
+  display: none;
 }
 
 .mobile #sceneList {

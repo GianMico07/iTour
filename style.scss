@@ -1307,6 +1307,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b82', end
     font-weight: 700;
 }
 
+.lbl-details{
+    margin-bottom: .5em;
+}
+
 .lbl-comments{
     margin: 0;
 }
@@ -1569,6 +1573,8 @@ h1{
 }
 
 @media (max-width: 1330px){
+
+
     .welcome{
         transform: scale(.9);
         margin: 0 2em;
@@ -1663,6 +1669,10 @@ h1{
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         -o-transition: 0.5s;
+    }
+
+    .weather-forecast-wrapper{
+        transform: scale(.9);
     }
 }
 
@@ -1772,6 +1782,10 @@ h1{
     // .weather-container{
     //     width: 100%
     // }  
+
+    .weather-forecast-wrapper{
+        transform: scale(.8);
+    }
 }
 
 @media (max-width: 780px){
@@ -1779,6 +1793,191 @@ h1{
         transform: scale(0.9);
         margin-top: 0em;
     }
+
+    .weather-forecast-wrapper{
+        transform: scale(.7);
+    }
+}
+
+@media (max-width: 720px){
+
+    .weather-forecast-wrapper{
+       transform: scale(1);
+       width: 80%;
+       height: 85vh;
+       overflow-y:scroll;
+       overflow-x: hidden;
+       -ms-overflow-style: none;  /* IE and Edge */
+       scrollbar-width: none;  /* Firefox */
+       padding-right: 1em;
+
+    }
+
+    #weather-forecast-cont{
+        padding: 0;
+    }
+
+
+    .wloc-name-cont{
+        display: block;
+    }
+
+    .wf-cont{
+        justify-content: center;
+        display: block;
+        
+    }
+    .wf-condition-cont{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: .5em;
+    }
+
+    .min-max{
+        margin-top: 0;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .min,.max{
+        width: fit-content;
+        font-size: 12px;
+    }
+
+    .day1{
+        margin-bottom: 1.5em;
+    }
+
+    .day1,.day2,.day3,.day4,.day5{
+        width: 95%;
+        padding: .8em;
+        height: 140px;
+    }
+
+    .wf-condition-wrapper{
+        order: 1;
+    }
+
+    .mb-wf-day2-wrapper{
+        justify-content: space-between;
+        margin-top: 0.5em;
+    }
+
+    .mb-wf-condition{
+        order: 1;
+    }
+
+    .day-wf-img-wrapper{
+        order: 2;
+    }
+
+    .day-wf-condition-cont{
+        order:2;
+
+        .day-wf-cond{
+            display: none;
+        }
+    }
+
+    .dotd{
+        font-size: 18px;
+    }
+
+    .wf-img{
+        order: 2;
+    }
+
+    
+
+    .wf-degree{
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .wf-cond{
+        font-size: 15px;
+    }
+
+    .mb-wf-day2-wrapper{
+        display: flex;
+    }
+    
+
+    // .day2,.day3,.day4,.day5{
+    //     height: 80px;
+    //     padding: 1em;
+    //     display: block;
+    // }
+
+    .wf-img{
+        width: 76px;
+    }
+
+    .four-days-wf-cont{
+
+    }
+
+    .day23,.day45{
+        flex-direction: column;
+        // display: none;
+    }
+
+    // .day2{
+    //     width: 50%;
+    // }
+
+
+
+
+
+    // #mb-wf-cont{
+    // width: 100%;
+    // height: 100%;
+    // position:fixed;
+    // top: 0%;
+    // left: 0%;
+    // bottom: 0%;
+
+    // background-color: rgba(0, 0, 0, .6);
+    // z-index: 3;
+
+    // display: none;
+    // justify-content: center;
+    // align-items: center;
+
+    // backdrop-filter: blur(5px);
+    // -webkit-backdrop-filter: blur(5px);
+    // -o-backdrop-filter: blur(5px);
+    // -moz-backdrop-filter: blur(5px);
+
+    // animation: fadeIn 0.2s;
+    // -webkit-animation: fadeIn 0.2s;
+    // -moz-animation: fadeIn 0.2s;
+    // -o-animation: fadeIn 0.2s;
+    // -ms-animation: fadeIn 0.2s;
+    
+    // }
+
+    // .mb-wf-wrapper{
+    //     width: fit-content;
+    // }
+
+    // .mb{
+    //     color: white;
+    // }
+
+    // .mb-day1,.mb-day2,.mb-day3,.mb-day4,.mb-day5{
+    //     width: 100%;
+    //     background-color: white;
+    //     height: 120px;
+    //     border-radius: 20px;
+    //     margin-bottom: 1em;
+    //     padding: 1em;
+    // }
+
 }
 
 @media (max-width:640px){

@@ -1081,6 +1081,10 @@ h6 {
   font-weight: 700;
 }
 
+.lbl-details {
+  margin-bottom: 0.5em;
+}
+
 .lbl-comments {
   margin: 0;
 }
@@ -1401,6 +1405,9 @@ h1 {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
   }
+  .weather-forecast-wrapper {
+    transform: scale(0.9);
+  }
 }
 @media (max-width: 960px) {
   .welcome {
@@ -1472,11 +1479,107 @@ h1 {
     width: 240px;
     padding: 1.8em;
   }
+  .weather-forecast-wrapper {
+    transform: scale(0.8);
+  }
 }
 @media (max-width: 780px) {
   .explore-cont {
     transform: scale(0.9);
     margin-top: 0em;
+  }
+  .weather-forecast-wrapper {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 720px) {
+  .weather-forecast-wrapper {
+    transform: scale(1);
+    width: 80%;
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    padding-right: 1em;
+  }
+  #weather-forecast-cont {
+    padding: 0;
+  }
+  .wloc-name-cont {
+    display: block;
+  }
+  .wf-cont {
+    justify-content: center;
+    display: block;
+  }
+  .wf-condition-cont {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+  .min-max {
+    margin-top: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .min, .max {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .day1 {
+    margin-bottom: 1.5em;
+  }
+  .day1, .day2, .day3, .day4, .day5 {
+    width: 95%;
+    padding: 0.8em;
+    height: 140px;
+  }
+  .wf-condition-wrapper {
+    order: 1;
+  }
+  .mb-wf-day2-wrapper {
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+  .mb-wf-condition {
+    order: 1;
+  }
+  .day-wf-img-wrapper {
+    order: 2;
+  }
+  .day-wf-condition-cont {
+    order: 2;
+  }
+  .day-wf-condition-cont .day-wf-cond {
+    display: none;
+  }
+  .dotd {
+    font-size: 18px;
+  }
+  .wf-img {
+    order: 2;
+  }
+  .wf-degree {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  .wf-cond {
+    font-size: 15px;
+  }
+  .mb-wf-day2-wrapper {
+    display: flex;
+  }
+  .wf-img {
+    width: 76px;
+  }
+  .day23, .day45 {
+    flex-direction: column;
   }
 }
 @media (max-width: 640px) {
