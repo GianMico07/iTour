@@ -875,6 +875,34 @@ h6{
 }
 
 
+.wf-condition-wrapper{
+    order: 2;
+}
+
+.mb-wf-condition{
+    order: 2;
+}
+
+.day-wf-img-wrapper{
+    order: 1;
+}
+
+.day-wf-condition-cont{
+    order:1;
+}
+
+.day-wf-cond{
+    display: flex;
+}
+
+.dotd{
+    font-size: 18px;
+}
+
+.wf-img{
+    order: 1;
+}
+
 
 
 .view-tour-cont{
@@ -1495,7 +1523,7 @@ h1{
 }
 
 .day-min-max{
-    margin-top: 34px;
+    margin-top: 2.2em;
 }
 
 .day-min,.day-max{
@@ -1523,6 +1551,10 @@ h1{
 }
 
 @media (max-width:1440px){
+
+    .weather-forecast-wrapper{
+        transform: scale(.9);
+    }
 
     .welcome,.con{
         transform: scale(1);
@@ -1799,6 +1831,7 @@ h1{
     }
 }
 
+
 @media (max-width: 720px){
 
     .weather-forecast-wrapper{
@@ -1834,7 +1867,7 @@ h1{
     }
 
     .min-max{
-        margin-top: 0;
+        margin-top: .7em;
         bottom: 0;
         width: 100%;
         justify-content: space-between;
@@ -1855,13 +1888,13 @@ h1{
         height: 140px;
     }
 
-    .wf-condition-wrapper{
-        order: 1;
-    }
-
     .mb-wf-day2-wrapper{
         justify-content: space-between;
         margin-top: 0.5em;
+    }
+
+    .wf-condition-wrapper{
+        order: 1;
     }
 
     .mb-wf-condition{
