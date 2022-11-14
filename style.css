@@ -1155,7 +1155,9 @@ h1 {
 }
 
 .wf-address {
-  width: 500px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #weather-forecast-cont {
