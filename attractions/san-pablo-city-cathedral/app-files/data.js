@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-1",
-      "name": "1",
+      "name": "San Pablo City Cathedral",
       "levels": [
         {
           "tileSize": 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       "id": "1-2",
-      "name": "2",
+      "name": "San Pablo City Cathedral",
       "levels": [
         {
           "tileSize": 256,
@@ -134,7 +134,7 @@ var APP_DATA = {
     },
     {
       "id": "3-4",
-      "name": "4",
+      "name": "San Pablo City Cathedral",
       "levels": [
         {
           "tileSize": 256,
@@ -172,7 +172,7 @@ var APP_DATA = {
     },
     {
       "id": "4-5",
-      "name": "5",
+      "name": "San Pablo City Cathedral",
       "levels": [
         {
           "tileSize": 256,
@@ -216,7 +216,7 @@ var APP_DATA = {
     },
     {
       "id": "5-6",
-      "name": "6",
+      "name": "San Pablo City Cathedral",
       "levels": [
         {
           "tileSize": 256,

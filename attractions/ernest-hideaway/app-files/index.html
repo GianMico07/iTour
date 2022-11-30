@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ernest Hideaway</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-entrance">
+        <li class="text">Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-img_0406">
+        <li class="text">IMG_0406</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-img_0405">
+        <li class="text">IMG_0405</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-img_0404">
+        <li class="text">IMG_0404</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-img_0403">
+        <li class="text">IMG_0403</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-img_0402">
+        <li class="text">IMG_0402</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-img_0401">
+        <li class="text">IMG_0401</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-img_0400">
+        <li class="text">IMG_0400</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-img_0399">
+        <li class="text">IMG_0399</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-img_0398">
+        <li class="text">IMG_0398</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-img_0397">
+        <li class="text">IMG_0397</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-img_0396">
+        <li class="text">IMG_0396</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-img_0395">
+        <li class="text">IMG_0395</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-img_0394">
+        <li class="text">IMG_0394</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-img_0393">
+        <li class="text">IMG_0393</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-img_0392">
+        <li class="text">IMG_0392</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-img_0391">
+        <li class="text">IMG_0391</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-img_0390">
+        <li class="text">IMG_0390</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-img_0389">
+        <li class="text">IMG_0389</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-img_0388">
+        <li class="text">IMG_0388</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-img_0387">
+        <li class="text">IMG_0387</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-img_0386">
+        <li class="text">IMG_0386</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
