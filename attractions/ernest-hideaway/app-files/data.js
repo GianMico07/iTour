@@ -498,7 +498,7 @@ var APP_DATA = {
     },
     {
       "id": "11-img_0396",
-      "name": "IMG_0396",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -542,7 +542,7 @@ var APP_DATA = {
     },
     {
       "id": "12-img_0395",
-      "name": "IMG_0395",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -598,7 +598,7 @@ var APP_DATA = {
     },
     {
       "id": "13-img_0394",
-      "name": "IMG_0394",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -642,7 +642,7 @@ var APP_DATA = {
     },
     {
       "id": "14-img_0393",
-      "name": "IMG_0393",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -680,7 +680,7 @@ var APP_DATA = {
     },
     {
       "id": "15-img_0392",
-      "name": "IMG_0392",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -724,7 +724,7 @@ var APP_DATA = {
     },
     {
       "id": "16-img_0391",
-      "name": "IMG_0391",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -768,7 +768,7 @@ var APP_DATA = {
     },
     {
       "id": "17-img_0390",
-      "name": "IMG_0390",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -818,7 +818,7 @@ var APP_DATA = {
     },
     {
       "id": "18-img_0389",
-      "name": "IMG_0389",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -856,7 +856,7 @@ var APP_DATA = {
     },
     {
       "id": "19-img_0388",
-      "name": "IMG_0388",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -900,7 +900,7 @@ var APP_DATA = {
     },
     {
       "id": "20-img_0387",
-      "name": "IMG_0387",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
@@ -944,7 +944,7 @@ var APP_DATA = {
     },
     {
       "id": "21-img_0386",
-      "name": "IMG_0386",
+      "name": "Ernest Hideaway",
       "levels": [
         {
           "tileSize": 256,
