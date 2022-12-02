@@ -402,7 +402,7 @@
 scene.switchTo();
 
 
-var enabled = false;
+var enabled = true;
 
 var toggleElement = document.getElementById('toggleDeviceOrientation');
 
