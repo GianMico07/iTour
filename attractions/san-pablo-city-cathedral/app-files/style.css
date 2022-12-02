@@ -42,6 +42,10 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
+#toggleDeviceOrientation{
+  display: none;
+}
+
 #titleBar {
   position: absolute;
   top: 0;
@@ -102,8 +106,7 @@ body.multiple-scenes.mobile #titleBar {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(1,59,130,0.9);
 }
 
 .mobile #fullscreenToggle {
@@ -152,8 +155,7 @@ body.fullscreen-enabled #fullscreenToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(1,59,130,0.9);
 }
 
 .mobile #autorotateToggle {
@@ -253,6 +255,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList {
+  display: none;
   position: absolute;
   top: 0;
   left: -220px;
@@ -264,7 +267,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-left: 0;
   -webkit-transition: margin-left 0.5s ease-in-out;
   transition: margin-left 0.5s ease-in-out;
-  display: none;
 }
 
 .mobile #sceneList {
@@ -778,9 +780,10 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 /* View control buttons */
 
 .viewControlButton {
+  display: none;
   position: absolute;
   bottom: 0;
-  left: 46%;
+  left: 45%;
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -796,7 +799,11 @@ body.view-control-buttons .viewControlButton {
 /* Hide controls when width is too small */
 @media (max-width: 600px) {
   body.view-control-buttons .viewControlButton {
-    display: block;
+    display: none;
+  }
+
+  #toggleDeviceOrientation{
+    display: unset;
   }
 }
 
@@ -828,3 +835,31 @@ body.view-control-buttons .viewControlButton {
   margin-left: 205px;
 }
 
+
+#toggleDeviceOrientation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+#toggleDeviceOrientation img {
+  width: 34px;
+  margin: 8px;
+}
+
+#toggleDeviceOrientation .disable {
+  display: none;
+}
+
+#toggleDeviceOrientation.enabled .disable {
+  display: block;
+
+}
+
+#toggleDeviceOrientation.enabled .enable {
+  display: none;
+}
