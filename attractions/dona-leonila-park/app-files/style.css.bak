@@ -42,10 +42,6 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
-#toggleDeviceOrientation{
-  display: none;
-}
-
 #titleBar {
   position: absolute;
   top: 0;
@@ -84,6 +80,7 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 30px;
   padding: 5px;
   background-color: rgba(1,59,130,0.9);
+ backdrop-filter: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -106,7 +103,8 @@ body.multiple-scenes.mobile #titleBar {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgba(1,59,130,0.9);
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
 }
 
 .mobile #fullscreenToggle {
@@ -155,7 +153,8 @@ body.fullscreen-enabled #fullscreenToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgba(1,59,130,0.9);
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
 }
 
 .mobile #autorotateToggle {
@@ -208,8 +207,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(1,59,130,0.9)
 }
 
 .mobile #sceneListToggle {
@@ -255,7 +253,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList {
-  display: none;
   position: absolute;
   top: 0;
   left: -220px;
@@ -267,6 +264,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-left: 0;
   -webkit-transition: margin-left 0.5s ease-in-out;
   transition: margin-left 0.5s ease-in-out;
+  display: none;
 }
 
 .mobile #sceneList {
@@ -374,11 +372,12 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
   max-width: 300px;
 
-  padding: 10px 12px;
+  padding: 8px 10px;
 
   border-radius: 5px;
 
-  background-color: rgba(1,59,130,0.7);
+  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);
 
   color: #fff;
 
@@ -783,17 +782,16 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: none;
   position: absolute;
   bottom: 0;
-  left: 45%;
-  width: 50px;
-  height: 50px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
   padding: 5px;
-  border-radius: 8px;
-  background-color: rgba(1,59,130,0.9);
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
 }
 
 body.view-control-buttons .viewControlButton {
   display: block;
-  margin-bottom: 1.5em;
 }
 
 /* Hide controls when width is too small */
@@ -801,16 +799,12 @@ body.view-control-buttons .viewControlButton {
   body.view-control-buttons .viewControlButton {
     display: none;
   }
-
-  #toggleDeviceOrientation{
-    display: unset;
-  }
 }
 
 .viewControlButton .icon {
   position: absolute;
-  top: 10px;
-  right: 9px;
+  top: 5px;
+  right: 5px;
   width: 30px;
   height: 30px;
 }
@@ -820,46 +814,17 @@ body.view-control-buttons .viewControlButton {
   margin-left: -145px;
 }
 .viewControlButton-2 {
-  margin-left: -75px;
+  margin-left: -95px;
 }
 .viewControlButton-3 {
-  margin-left: -5px;
+  margin-left: -45px;
 }
 .viewControlButton-4 {
-  margin-left: 135px;
+  margin-left: 5px;
 }
 .viewControlButton-5 {
-  margin-left: 65px;
+  margin-left: 55px;
 }
 .viewControlButton-6 {
-  margin-left: 205px;
-}
-
-
-#toggleDeviceOrientation {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 65px;
-  left: 10px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-}
-
-#toggleDeviceOrientation img {
-  width: 34px;
-  margin: 8px;
-}
-
-#toggleDeviceOrientation .disable {
-  display: none;
-}
-
-#toggleDeviceOrientation.enabled .disable {
-  display: block;
-
-}
-
-#toggleDeviceOrientation.enabled .enable {
-  display: none;
+  margin-left: 105px;
 }
