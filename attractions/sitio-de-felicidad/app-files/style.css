@@ -42,6 +42,10 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
+#toggleDeviceOrientation{
+  display: none;
+}
+
 #titleBar {
   position: absolute;
   top: 0;
@@ -797,6 +801,10 @@ body.view-control-buttons .viewControlButton {
   body.view-control-buttons .viewControlButton {
     display: none;
   }
+
+  #toggleDeviceOrientation{
+    display: unset;
+  }
 }
 
 .viewControlButton .icon {
@@ -825,4 +833,33 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 205px;
+}
+
+
+#toggleDeviceOrientation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+#toggleDeviceOrientation img {
+  width: 34px;
+  margin: 8px;
+}
+
+#toggleDeviceOrientation .disable {
+  display: none;
+}
+
+#toggleDeviceOrientation.enabled .disable {
+  display: block;
+
+}
+
+#toggleDeviceOrientation.enabled .enable {
+  display: none;
 }

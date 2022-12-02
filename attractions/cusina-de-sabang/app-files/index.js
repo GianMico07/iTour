@@ -20,8 +20,10 @@
   var bowser = window.bowser;
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
+  var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
   // Grab elements from DOM.
+  
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
   var sceneListElement = document.querySelector('#sceneList');
@@ -29,6 +31,9 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+
+
+
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -60,6 +65,8 @@
     document.body.classList.add('tooltip-fallback');
   }
 
+  
+
   // Viewer options.
   var viewerOpts = {
     controls: {
@@ -87,6 +94,67 @@
       view: view,
       pinFirstLevel: true
     });
+
+    scene.switchTo();
+
+
+    var enabled = false;
+    
+    var toggleElement = document.getElementById('toggleDeviceOrientation');
+    
+    function requestPermissionForIOS() {
+      window.DeviceOrientationEvent.requestPermission()
+        .then(response => {
+          if (response === 'granted') {
+            enableDeviceOrientation()
+          }
+        }).catch((e) => {
+          console.error(e)
+        })
+    }
+    
+    function enableDeviceOrientation() {
+      deviceOrientationControlMethod.getPitch(function (err, pitch) {
+        if (!err) {
+          view.setPitch(pitch);
+        }
+      });
+      controls.enableMethod('deviceOrientation');
+      enabled = true;
+      toggleElement.className = 'enabled';
+    }
+    
+    function enable() {
+      if (window.DeviceOrientationEvent) {
+        if (typeof (window.DeviceOrientationEvent.requestPermission) == 'function') {
+          requestPermissionForIOS()
+        } else {
+          enableDeviceOrientation()
+        }
+      }
+    }
+    
+    function disable() {
+      controls.disableMethod('deviceOrientation');
+      enabled = false;
+      toggleElement.className = '';
+    }
+    
+    function toggle() {
+      if (enabled) {
+        disable();
+      } else {
+        enable();
+      }
+    }
+    
+    toggleElement.addEventListener('click', toggle);
+
+
+
+
+
+
 
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
@@ -171,6 +239,9 @@
 
   // Associate view controls with elements.
   var controls = viewer.controls();
+  var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
+  controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
+
   controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
   controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
   controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
@@ -388,5 +459,7 @@
 
   // Display the initial scene.
   switchScene(scenes[0]);
-
 })();
+
+  // Register the custom control method.
+  
