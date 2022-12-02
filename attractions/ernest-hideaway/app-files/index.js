@@ -30,6 +30,7 @@
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
 
+
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
     var setMode = function() {
@@ -59,6 +60,8 @@
   if (bowser.msie && parseFloat(bowser.version) < 11) {
     document.body.classList.add('tooltip-fallback');
   }
+
+  
 
   // Viewer options.
   var viewerOpts = {
@@ -171,6 +174,8 @@
 
   // Associate view controls with elements.
   var controls = viewer.controls();
+  var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
+  controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
   controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
   controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
   controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
@@ -388,5 +393,63 @@
 
   // Display the initial scene.
   switchScene(scenes[0]);
-
 })();
+
+  // Register the custom control method.
+  
+
+
+scene.switchTo();
+
+
+var enabled = false;
+
+var toggleElement = document.getElementById('toggleDeviceOrientation');
+
+function requestPermissionForIOS() {
+  window.DeviceOrientationEvent.requestPermission()
+    .then(response => {
+      if (response === 'granted') {
+        enableDeviceOrientation()
+      }
+    }).catch((e) => {
+      console.error(e)
+    })
+}
+
+function enableDeviceOrientation() {
+  deviceOrientationControlMethod.getPitch(function (err, pitch) {
+    if (!err) {
+      view.setPitch(pitch);
+    }
+  });
+  controls.enableMethod('deviceOrientation');
+  enabled = true;
+  toggleElement.className = 'enabled';
+}
+
+function enable() {
+  if (window.DeviceOrientationEvent) {
+    if (typeof (window.DeviceOrientationEvent.requestPermission) == 'function') {
+      requestPermissionForIOS()
+    } else {
+      enableDeviceOrientation()
+    }
+  }
+}
+
+function disable() {
+  controls.disableMethod('deviceOrientation');
+  enabled = false;
+  toggleElement.className = '';
+}
+
+function toggle() {
+  if (enabled) {
+    disable();
+  } else {
+    enable();
+  }
+}
+
+toggleElement.addEventListener('click', toggle);
