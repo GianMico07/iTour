@@ -42,6 +42,10 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
+#toggleDeviceOrientation{
+  display: none;
+}
+
 #titleBar {
   position: absolute;
   top: 0;
@@ -797,6 +801,10 @@ body.view-control-buttons .viewControlButton {
   body.view-control-buttons .viewControlButton {
     display: none;
   }
+
+  #toggleDeviceOrientation{
+    display: unset;
+  }
 }
 
 .viewControlButton .icon {
@@ -832,7 +840,7 @@ body.view-control-buttons .viewControlButton {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 50px;
+  top: 65px;
   left: 10px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
