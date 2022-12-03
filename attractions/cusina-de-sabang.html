@@ -8,6 +8,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" type="image" href="/ico/logo.png">
+    <link rel="shortcut icon" type="image" href="/ico/logo.png">
     <script src="https://kit.fontawesome.com/ec7c8bee43.js" crossorigin="anonymous"></script>
     <title>Cusina De Sabang - Explore</title>
 </head>
@@ -25,7 +26,7 @@
         </div>
         
         <div class="mobile-nav">
-            <i class="fa-solid fa-bars"></i>
+            <button class="mobile-nav-menu" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
         </div>
         <div class="nav">
             <ul>
@@ -35,6 +36,15 @@
                 <a class="nav-bg" href=""><li>About</li></a>
             </ul>
         </div>
+    </div>
+
+    <div class="show-menu">
+        <ul class="mobile-menu" id="menuList">
+            <a class="nav-bg" href="/index.html"><li>Home</li></a>
+            <a class="nav-bg active" href="/explore.html"><li>Explore</li></a>
+            <a class="nav-bg" href="/contacts.html"><li>Contact Us</li></a>
+            <a class="nav-bg" href=""><li>About</li></a>
+        </ul>
     </div>
     <div id="close">
         <button class="btn-close" onclick="hideDiv(); HideWFDiv()"><i class="fa-solid fa-xmark"></i></button>
@@ -257,10 +267,10 @@
 
 
 <div id="share" class="share">
-    <a href="https://www.facebook.com/sharer/sharer.php?u= " target="_blank"><button class="fb-share btn-share1"><i class="fa-brands fa-facebook-f"></i>Share on Facebook</button></a>
-    <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" target="_blank"><button class="twt-share btn-share1"><i class="fa-brands fa-twitter"></i>Share on Twitter</button></a>
-    <a href="https://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank"><button class="redd-share btn-share1"><i class="fa-brands fa-reddit-alien"></i>Share on Reddit</button></a>
-    <a href="mailto:?subject=<SUBJECT>&body=<BODY>"><button class="email-share btn-share1"><i class="fa-solid fa-envelope"></i>Share on Email</button></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://itour-sanpablo.netlify.app/attractions/cusina-de-sabang.html" target="_blank"><button class="fb-share btn-share1"><i class="fa-brands fa-facebook-f"></i>Share on Facebook</button></a>
+    <a href="https://twitter.com/share?url=https://itour-sanpablo.netlify.app/attractions/cusina-de-sabang.html" target="_blank"><button class="twt-share btn-share1"><i class="fa-brands fa-twitter"></i>Share on Twitter</button></a>
+    <a href="https://reddit.com/submit?url=https://itour-sanpablo.netlify.app/attractions/cusina-de-sabang.html&title=Cusina De Sabang - iTOUR San Pablo" target="_blank"><button class="redd-share btn-share1"><i class="fa-brands fa-reddit-alien"></i>Share on Reddit</button></a>
+    <a href="mailto:?subject=Cusina De Sabang - iTOUR San Pablo&body=https://itour-sanpablo.netlify.app/attractions/cusina-de-sabang.html"><button class="email-share btn-share1"><i class="fa-solid fa-envelope"></i>Share on Email</button></a>
 </div>
 
 
