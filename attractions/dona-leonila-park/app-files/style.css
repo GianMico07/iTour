@@ -80,9 +80,9 @@ body.multiple-scenes.mobile #titleBar {
 
 #titleBar .sceneName {
   width: 100%;
-  line-height: 30px;
+  line-height: 50px;
   height: 50px;
-  padding: 9px;
+  /* padding: 9px; */
   background-color: rgba(1,59,130,1);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -95,7 +95,7 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 .mobile #titleBar .sceneName {
-  line-height: 40px;
+  line-height: 50px;
 }
 
 #fullscreenToggle {
@@ -864,5 +864,5 @@ body.view-control-buttons .viewControlButton {
 }
 
 @media (max-width: 480px){
-  
+
 }
