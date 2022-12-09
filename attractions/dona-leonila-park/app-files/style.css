@@ -120,7 +120,7 @@ body.fullscreen-enabled #fullscreenToggle {
 
 #fullscreenToggle .icon {
   position: absolute;
-  top: 7px;
+  top: 10px;
   right: 10px;
   width: 30px;
   height: 30px;
@@ -174,8 +174,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #autorotateToggle .icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 9px;
+  right: 2px;
   width: 30px;
   height: 30px;
 }
