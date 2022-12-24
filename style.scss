@@ -2124,7 +2124,26 @@ h1{
         .feature-cont{
             grid-template-columns: auto;
             margin-bottom: 0;
+            margin-top: -3em;
         }
+
+        .feature1:hover{
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.05);
+            
+              .feature-img{
+                  -webkit-transform: scale(1.06);
+                  -moz-transform: scale(1.06);
+                  -o-transform: scale(1.06);
+                  transform: scale(1.06);
+          
+              }
+            
+          }
+
+
 
 
         
@@ -2197,6 +2216,19 @@ h1{
         #share{
             flex-direction: column;
             gap: 10px;
+        }
+
+        .mobile-contact-cont{
+            transform: scale(.8);
+            margin-top: -5em;
+        }
+
+        .msg-cont{
+            width: 100vw;
+        }
+
+        .hr-cont,.h6-phone,.h6-email,.h6-add{
+            color: black;
         }
     }
 

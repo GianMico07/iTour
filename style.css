@@ -1705,6 +1705,13 @@ h1 {
   .feature-cont {
     grid-template-columns: auto;
     margin-bottom: 0;
+    margin-top: -3em;
+  }
+  .feature1:hover {
+    transform: scale(1.05);
+  }
+  .feature1:hover .feature-img {
+    transform: scale(1.06);
   }
   .vtfy {
     margin-top: 5em;
@@ -1758,6 +1765,16 @@ h1 {
   #share {
     flex-direction: column;
     gap: 10px;
+  }
+  .mobile-contact-cont {
+    transform: scale(0.8);
+    margin-top: -5em;
+  }
+  .msg-cont {
+    width: 100vw;
+  }
+  .hr-cont, .h6-phone, .h6-email, .h6-add {
+    color: black;
   }
 }
 @media (max-width: 640px) and (max-width: 378px) {
