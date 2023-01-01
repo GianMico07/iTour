@@ -253,6 +253,8 @@
                     The Franciscans later administered the parish of San Pablo (which was then part of the province of Batangas) on April 4, 1794 with Father Andres Cabrera, OFM as parish priest. Father Cabrera added the brick-stone wall and built a stone cemetery in 1796.19th century Renovations on the church building and the convent were conducted from 1839 to 1858 under the auspices of Father Peregrin Prosper. Fathers Eugenio Garcia, Francisco Vellon, and Santiago Bravo added the transept from 1871 to 1877, 1878 to 1884, and 1884 to 1888, respectively. In 1898 administration was transferred to the secular priests, with Father Francisco Alcantara as the first parish priest from the seculars.
                     </p>
 
+                    <p class="eme"></p>
+
             </div>
 
             <div class="iframe">
@@ -272,7 +274,15 @@
 
         <h5 class="lbl-comments">Comments</h5>
         <!-- <div id="disqus_thread"></div> -->
-        <div class="powr-star-ratings" id="0a05cd97_1670927492"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+        <div class="powr-star-ratings" id="0a05cd97_1670927492"></div>
+        <script src="https://www.powr.io/powr.js?platform=html">
+            var elem = document.querySelector('.product-reviews__summary-number');
+            var clone = elem.cloneNode(true);
+            clone.id = 'elem2';
+            clone.classList.add('text-large');
+            elem.after(clone);
+
+        </script>
                 <script>
                         var disqus_config = function () {
                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
@@ -305,7 +315,6 @@
 </div>
 
 <script src="/index.js"></script>
-
     
 </body>
 </html>
