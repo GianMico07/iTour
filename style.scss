@@ -1196,6 +1196,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b82', end
     display: block;
 }
 
+.btn-csoon{
+    margin: 0;
+    font-size: 15px;
+    width: 140px;
+    border-radius: 10px;
+    color:white;
+    background-color: #3A3A33;
+    transition: all .2s ease-in-out;
+}
+
 
 
 .btn-view:hover{
