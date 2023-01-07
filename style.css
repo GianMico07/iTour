@@ -275,13 +275,11 @@ iframe {
 
 .about-desc {
   width: 800px;
-  padding: 0 3em;
+  padding-right: 3em;
 }
 
 .p-about-desc {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 700px;
 }
 
 .p-welcome {
