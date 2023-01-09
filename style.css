@@ -1692,6 +1692,21 @@ h1 {
   }
 }
 @media (max-width: 640px) and (max-width: 480px) {
+  .p-about-desc {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .about-desc {
+    width: 400px;
+    padding: 2em;
+  }
+  .p-welcome {
+    font-size: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .logo-name {
     margin-left: 0;
   }
