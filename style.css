@@ -1692,14 +1692,18 @@ h1 {
   }
 }
 @media (max-width: 640px) and (max-width: 480px) {
+  .about-cont {
+    display: flex;
+    justify-content: center;
+  }
   .p-about-desc {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .about-desc {
-    width: 400px;
-    padding: 2em;
+    padding: 0;
+    width: 300px;
   }
   .p-welcome {
     font-size: 20px;

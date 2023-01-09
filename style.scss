@@ -2111,16 +2111,20 @@ h1{
 
     @media (max-width: 480px){
 
+        .about-cont{
+            display: flex;
+            justify-content: center;
+        }
+
         .p-about-desc{
-            width: fit-content;
+           width: fit-content;
         }
 
         .about-desc{
             // display: flex;
             // flex-direction: column;
-            // justify-content: center;
-            width: 400px;
-            padding: 2em;
+           padding: 0;
+           width: 300px;
         }
 
         .p-welcome{
